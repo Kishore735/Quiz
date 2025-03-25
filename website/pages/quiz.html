@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Quiz</title>
+    <link rel="stylesheet" href="../css/result.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="quiz-container">
+        <div id="quiz-header">
+            <h1 id="quiz-title">Quiz</h1>
+            <div id="quiz-info">
+                <span id="language-display"></span>
+                <span id="module-display"></span>
+            </div>
+        </div>
+        
+        <div id="question-container">
+            <div id="current-question">
+                <h2 id="question-text"></h2>
+                <div id="options-container"></div>
+            </div>
+        </div>
+        
+        <div id="quiz-controls">
+            <button id="submit-btn" class="hidden">Submit Quiz</button>
+        </div>
+        
+        <div id="quiz-results" style="display: none;">
+            <!-- Results will be dynamically generated here -->
+        </div>
+    </div>
+
+    <!-- Firebase Scripts -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-auth-compat.js"></script>
+
+    <!-- Chart.js Library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Local Scripts -->
+    <script src="../js/firebase-config.js"></script>
+    <script src="../js/quiz.js"></script>
+</body>
+</html>

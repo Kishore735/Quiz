@@ -1,0 +1,453 @@
+{
+    "modules": [
+        {
+            "module_id": "java_basics",
+            "module_name": "Introduction to Java & Basic Syntax",
+            "questions": [
+                {
+                    "question_text": "What is Java?",
+                    "options": ["A programming language", "A database", "An OS", "A web framework"],
+                    "correct_option": "A programming language"
+                },
+                {
+                    "question_text": "Which keyword is used to define a class in Java?",
+                    "options": ["class", "struct", "interface", "object"],
+                    "correct_option": "class"
+                },
+                {
+                    "question_text": "Which function serves as the entry point of a Java program?",
+                    "options": ["start()", "main()", "execute()", "run()"],
+                    "correct_option": "main()"
+                },
+                {
+                    "question_text": "Which package is automatically imported in Java?",
+                    "options": ["java.util", "java.io", "java.lang", "javax.swing"],
+                    "correct_option": "java.lang"
+                },
+                {
+                    "question_text": "Which data type is used to store a single character?",
+                    "options": ["char", "string", "Character", "byte"],
+                    "correct_option": "char"
+                },
+                {
+                    "question_text": "Which operator is used for comments in Java?",
+                    "options": ["//", "#", "/* */", "--"],
+                    "correct_option": "//"
+                },
+                {
+                    "question_text": "What is bytecode in Java?",
+                    "options": ["Compiled source code", "Machine code", "Intermediate code executed by JVM", "A scripting language"],
+                    "correct_option": "Intermediate code executed by JVM"
+                },
+                {
+                    "question_text": "Which keyword is used to create an object in Java?",
+                    "options": ["new", "create", "instance", "object"],
+                    "correct_option": "new"
+                },
+                {
+                    "question_text": "Which statement is used to print output in Java?",
+                    "options": ["print()", "System.out.print()", "console.log()", "display()"],
+                    "correct_option": "System.out.print()"
+                },
+                {
+                    "question_text": "Which extension is used for Java source files?",
+                    "options": [".java", ".class", ".js", ".jav"],
+                    "correct_option": ".java"
+                }
+            ]
+        },
+        {
+            "module_id": "java_control_flow",
+            "module_name": "Operators and Control Flow",
+            "questions": [
+                {
+                    "question_text": "Which operator is used for logical AND in Java?",
+                    "options": ["&", "&&", "and", "||"],
+                    "correct_option": "&&"
+                },
+                {
+                    "question_text": "Which statement is used for conditional execution?",
+                    "options": ["if", "for", "while", "switch"],
+                    "correct_option": "if"
+                },
+                {
+                    "question_text": "Which loop is used when the number of iterations is known?",
+                    "options": ["while", "do-while", "for", "foreach"],
+                    "correct_option": "for"
+                },
+                {
+                    "question_text": "Which statement is used to terminate a loop?",
+                    "options": ["exit", "break", "continue", "stop"],
+                    "correct_option": "break"
+                },
+                {
+                    "question_text": "Which keyword is used for a switch-case block?",
+                    "options": ["case", "switch", "choose", "if"],
+                    "correct_option": "switch"
+                },
+                {
+                    "question_text": "Which operator is used for modulus operation in Java?",
+                    "options": ["/", "%", "mod", "*"],
+                    "correct_option": "%"
+                },
+                {
+                    "question_text": "Which loop executes at least once regardless of condition?",
+                    "options": ["for", "while", "do-while", "foreach"],
+                    "correct_option": "do-while"
+                },
+                {
+                    "question_text": "Which statement is used to skip an iteration of a loop?",
+                    "options": ["break", "skip", "continue", "exit"],
+                    "correct_option": "continue"
+                },
+                {
+                    "question_text": "Which operator is used for ternary conditional evaluation?",
+                    "options": [":?", "?:", "??", "if-else"],
+                    "correct_option": "?:"
+                },
+                {
+                    "question_text": "Which keyword is used to define a constant in Java?",
+                    "options": ["final", "const", "define", "static"],
+                    "correct_option": "final"
+                }
+            ]
+        },
+        {
+            "module_id": "java_oop",
+            "module_name": "Object-Oriented Programming (OOP) Concepts",
+            "questions": [
+                {
+                    "question_text": "Which keyword is used to define a class in Java?",
+                    "options": ["class", "struct", "interface", "object"],
+                    "correct_option": "class"
+                },
+                {
+                    "question_text": "What is the principle of Encapsulation in Java?",
+                    "options": ["Hiding implementation details", "Multiple inheritance", "Overloading functions", "Using static variables"],
+                    "correct_option": "Hiding implementation details"
+                },
+                {
+                    "question_text": "Which keyword is used for inheritance in Java?",
+                    "options": ["extends", "implements", "inherits", "super"],
+                    "correct_option": "extends"
+                },
+                {
+                    "question_text": "Which feature allows a class to have multiple methods with the same name but different parameters?",
+                    "options": ["Encapsulation", "Overloading", "Overriding", "Abstraction"],
+                    "correct_option": "Overloading"
+                },
+                {
+                    "question_text": "Which OOP principle allows one interface to be used for multiple data types?",
+                    "options": ["Encapsulation", "Polymorphism", "Abstraction", "Inheritance"],
+                    "correct_option": "Polymorphism"
+                },
+                {
+                    "question_text": "Which method is called automatically when an object is created?",
+                    "options": ["initialize()", "constructor", "create()", "new()"],
+                    "correct_option": "constructor"
+                },
+                {
+                    "question_text": "What is an abstract class in Java?",
+                    "options": ["A class that cannot be instantiated", "A class with only static methods", "A class that supports multiple inheritance", "A class without variables"],
+                    "correct_option": "A class that cannot be instantiated"
+                },
+                {
+                    "question_text": "Which keyword is used to prevent a method from being overridden?",
+                    "options": ["private", "static", "final", "protected"],
+                    "correct_option": "final"
+                },
+                {
+                    "question_text": "Which Java feature enables runtime method binding?",
+                    "options": ["Early binding", "Static binding", "Dynamic binding", "Manual binding"],
+                    "correct_option": "Dynamic binding"
+                },
+                {
+                    "question_text": "What is the default access specifier for class members in Java?",
+                    "options": ["private", "protected", "public", "package-private"],
+                    "correct_option": "package-private"
+                }
+            ]
+        },
+        {
+            "module_id": "java_memory_management",
+            "module_name": "Memory Management and Garbage Collection",
+            "questions": [
+                {
+                    "question_text": "How is memory managed in Java?",
+                    "options": ["Manually by the programmer", "Through pointers", "Automatically by the JVM", "Using malloc() and free()"],
+                    "correct_option": "Automatically by the JVM"
+                },
+                {
+                    "question_text": "Which area of memory is used for storing objects in Java?",
+                    "options": ["Stack", "Heap", "Register", "Static"],
+                    "correct_option": "Heap"
+                },
+                {
+                    "question_text": "Which Java feature automatically reclaims unused memory?",
+                    "options": ["Destructor", "Garbage Collection", "Deallocation", "Manual cleanup"],
+                    "correct_option": "Garbage Collection"
+                },
+                {
+                    "question_text": "Which keyword prevents an object from being garbage collected?",
+                    "options": ["final", "static", "volatile", "transient"],
+                    "correct_option": "final"
+                },
+                {
+                    "question_text": "Which method is used to request garbage collection in Java?",
+                    "options": ["dispose()", "gc()", "collect()", "System.gc()"],
+                    "correct_option": "System.gc()"
+                },
+                {
+                    "question_text": "What is a memory leak in Java?",
+                    "options": ["When memory is allocated but not deallocated", "When an object cannot be garbage collected", "When a program runs out of stack memory", "When a variable is declared but never used"],
+                    "correct_option": "When an object cannot be garbage collected"
+                },
+                {
+                    "question_text": "Which part of memory stores method calls and local variables?",
+                    "options": ["Heap", "Stack", "Static", "Register"],
+                    "correct_option": "Stack"
+                },
+                {
+                    "question_text": "Which process removes unused objects from memory?",
+                    "options": ["Heap sorting", "Memory swapping", "Garbage collection", "Compaction"],
+                    "correct_option": "Garbage collection"
+                },
+                {
+                    "question_text": "Which Java feature prevents memory fragmentation?",
+                    "options": ["Garbage collection", "Memory pooling", "Defragmentation", "Manual allocation"],
+                    "correct_option": "Garbage collection"
+                },
+                {
+                    "question_text": "Which algorithm is used in Java garbage collection?",
+                    "options": ["Mark and Sweep", "FIFO", "Bubble Sort", "Round Robin"],
+                    "correct_option": "Mark and Sweep"
+                }
+            ]
+        },
+        {
+            "module_id": "java_exceptions",
+            "module_name": "Exception Handling in Java",
+            "questions": [
+                {
+                    "question_text": "Which keyword is used to handle exceptions in Java?",
+                    "options": ["try", "catch", "finally", "throw"],
+                    "correct_option": "try"
+                },
+                {
+                    "question_text": "Which block is always executed in a try-catch structure?",
+                    "options": ["try", "catch", "finally", "throw"],
+                    "correct_option": "finally"
+                },
+                {
+                    "question_text": "Which exception is thrown when dividing by zero in Java?",
+                    "options": ["IOException", "NullPointerException", "ArithmeticException", "ArrayIndexOutOfBoundsException"],
+                    "correct_option": "ArithmeticException"
+                },
+                {
+                    "question_text": "What is the superclass of all exceptions in Java?",
+                    "options": ["Object", "Throwable", "Exception", "RuntimeException"],
+                    "correct_option": "Throwable"
+                },
+                {
+                    "question_text": "Which statement is used to explicitly throw an exception?",
+                    "options": ["raise", "throw", "throws", "exception"],
+                    "correct_option": "throw"
+                },
+                {
+                    "question_text": "Which keyword is used to specify that a method may throw an exception?",
+                    "options": ["throw", "throws", "try", "catch"],
+                    "correct_option": "throws"
+                },
+                {
+                    "question_text": "Which type of exception must be handled or declared in Java?",
+                    "options": ["Checked Exception", "Unchecked Exception", "Runtime Exception", "All of the above"],
+                    "correct_option": "Checked Exception"
+                },
+                {
+                    "question_text": "What is the purpose of the 'catch' block?",
+                    "options": ["To handle exceptions", "To define a method", "To initialize a variable", "To execute a loop"],
+                    "correct_option": "To handle exceptions"
+                },
+                {
+                    "question_text": "Which exception is thrown when accessing an invalid array index?",
+                    "options": ["ArrayIndexOutOfBoundsException", "IOException", "NumberFormatException", "IllegalArgumentException"],
+                    "correct_option": "ArrayIndexOutOfBoundsException"
+                },
+                {
+                    "question_text": "Which exception is thrown when a null reference is accessed?",
+                    "options": ["IOException", "NullPointerException", "ArithmeticException", "IllegalStateException"],
+                    "correct_option": "NullPointerException"
+                }
+            ]
+        },
+        {
+            "module_id": "java_collections",
+            "module_name": "Collections Framework & Generics",
+            "questions": [
+                {
+                    "question_text": "Which interface represents a collection of objects in Java?",
+                    "options": ["Set", "List", "Queue", "Collection"],
+                    "correct_option": "Collection"
+                },
+                {
+                    "question_text": "Which class implements a dynamic array in Java?",
+                    "options": ["ArrayList", "LinkedList", "Vector", "HashSet"],
+                    "correct_option": "ArrayList"
+                },
+                {
+                    "question_text": "Which collection does not allow duplicate elements?",
+                    "options": ["List", "Set", "Queue", "Map"],
+                    "correct_option": "Set"
+                },
+                {
+                    "question_text": "Which class implements a doubly linked list in Java?",
+                    "options": ["ArrayList", "LinkedList", "Vector", "HashMap"],
+                    "correct_option": "LinkedList"
+                },
+                {
+                    "question_text": "Which collection allows key-value pairs?",
+                    "options": ["Set", "List", "Queue", "Map"],
+                    "correct_option": "Map"
+                },
+                {
+                    "question_text": "Which generic type parameter is commonly used in Java?",
+                    "options": ["T", "E", "K", "All of the above"],
+                    "correct_option": "All of the above"
+                },
+                {
+                    "question_text": "Which interface represents a last-in, first-out (LIFO) structure?",
+                    "options": ["Queue", "Stack", "Deque", "PriorityQueue"],
+                    "correct_option": "Stack"
+                },
+                {
+                    "question_text": "Which Java collection maintains elements in a sorted order?",
+                    "options": ["TreeSet", "HashSet", "ArrayList", "LinkedList"],
+                    "correct_option": "TreeSet"
+                },
+                {
+                    "question_text": "Which class should be used for a high-performance map with constant-time retrieval?",
+                    "options": ["TreeMap", "HashMap", "LinkedHashMap", "WeakHashMap"],
+                    "correct_option": "HashMap"
+                },
+                {
+                    "question_text": "Which method is used to add an element to an ArrayList?",
+                    "options": ["insert()", "add()", "put()", "push()"],
+                    "correct_option": "add()"
+                }
+            ]
+        },
+        {
+            "module_id": "java_multithreading",
+            "module_name": "Multithreading and Concurrency",
+            "questions": [
+                {
+                    "question_text": "Which class is used to create a thread in Java?",
+                    "options": ["Thread", "Runnable", "Executor", "Task"],
+                    "correct_option": "Thread"
+                },
+                {
+                    "question_text": "Which method starts a thread in Java?",
+                    "options": ["run()", "start()", "execute()", "begin()"],
+                    "correct_option": "start()"
+                },
+                {
+                    "question_text": "Which interface must be implemented for multithreading in Java?",
+                    "options": ["Runnable", "Thread", "Callable", "Executor"],
+                    "correct_option": "Runnable"
+                },
+                {
+                    "question_text": "Which keyword is used to prevent thread interference?",
+                    "options": ["static", "volatile", "synchronized", "final"],
+                    "correct_option": "synchronized"
+                },
+                {
+                    "question_text": "Which method pauses the execution of a thread?",
+                    "options": ["sleep()", "wait()", "suspend()", "halt()"],
+                    "correct_option": "sleep()"
+                },
+                {
+                    "question_text": "Which method waits for a thread to finish execution?",
+                    "options": ["stop()", "wait()", "join()", "end()"],
+                    "correct_option": "join()"
+                },
+                {
+                    "question_text": "Which package contains the concurrency utilities in Java?",
+                    "options": ["java.util", "java.concurrent", "java.util.concurrent", "java.threads"],
+                    "correct_option": "java.util.concurrent"
+                },
+                {
+                    "question_text": "Which collection is thread-safe in Java?",
+                    "options": ["HashMap", "ArrayList", "ConcurrentHashMap", "LinkedList"],
+                    "correct_option": "ConcurrentHashMap"
+                },
+                {
+                    "question_text": "Which executor service method creates a fixed thread pool?",
+                    "options": ["newFixedThreadPool()", "newCachedThreadPool()", "newSingleThreadExecutor()", "newScheduledThreadPool()"],
+                    "correct_option": "newFixedThreadPool()"
+                },
+                {
+                    "question_text": "Which mechanism prevents deadlocks in multithreading?",
+                    "options": ["Thread Priority", "Locks", "Avoid nested locks", "Interrupt"],
+                    "correct_option": "Avoid nested locks"
+                }
+            ]
+        },
+        {
+            "module_id": "java_advanced",
+            "module_name": "Advanced Topics and Optimization Techniques",
+            "questions": [
+                {
+                    "question_text": "Which keyword is used to define an immutable class in Java?",
+                    "options": ["static", "final", "constant", "sealed"],
+                    "correct_option": "final"
+                },
+                {
+                    "question_text": "Which feature improves performance by reducing redundant computations?",
+                    "options": ["Loop Unrolling", "Common Subexpression Elimination", "Inlining", "Dead Code Elimination"],
+                    "correct_option": "Common Subexpression Elimination"
+                },
+                {
+                    "question_text": "Which Java technology improves code execution efficiency?",
+                    "options": ["JIT Compiler", "Garbage Collection", "JVM", "Class Loader"],
+                    "correct_option": "JIT Compiler"
+                },
+                {
+                    "question_text": "Which JVM optimization technique removes unused code?",
+                    "options": ["Dead Code Elimination", "Inlining", "Loop Optimization", "Garbage Collection"],
+                    "correct_option": "Dead Code Elimination"
+                },
+                {
+                    "question_text": "Which Java feature is used to manage memory efficiently?",
+                    "options": ["Garbage Collection", "Memory Pooling", "Heap Management", "Stack Allocation"],
+                    "correct_option": "Garbage Collection"
+                },
+                {
+                    "question_text": "Which tool is used for Java performance profiling?",
+                    "options": ["JProfiler", "VisualVM", "JConsole", "All of the above"],
+                    "correct_option": "All of the above"
+                },
+                {
+                    "question_text": "Which optimization technique reduces method call overhead?",
+                    "options": ["Inlining", "Recursion", "Pointer arithmetic", "Heap allocation"],
+                    "correct_option": "Inlining"
+                },
+                {
+                    "question_text": "Which feature allows Java applications to execute faster?",
+                    "options": ["Bytecode", "Native Compilation", "Dynamic Linking", "Just-in-Time Compilation"],
+                    "correct_option": "Just-in-Time Compilation"
+                },
+                {
+                    "question_text": "Which feature helps manage large Java codebases efficiently?",
+                    "options": ["Modules", "Packages", "Interfaces", "Annotations"],
+                    "correct_option": "Modules"
+                },
+                {
+                    "question_text": "Which approach reduces memory fragmentation in Java?",
+                    "options": ["Garbage Collection", "Memory Pooling", "Defragmentation", "Manual Allocation"],
+                    "correct_option": "Memory Pooling"
+                }
+            ]
+        }
+    ]
+}
+

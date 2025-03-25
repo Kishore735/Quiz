@@ -1,0 +1,452 @@
+{
+    "modules": [
+        {
+            "module_id": "cpp_basics",
+            "module_name": "Introduction to C++ & Basic Syntax",
+            "questions": [
+                {
+                    "question_text": "What is C++?",
+                    "options": ["A programming language", "A database", "An operating system", "A web framework"],
+                    "correct_option": "A programming language"
+                },
+                {
+                    "question_text": "Which extension is used for C++ source files?",
+                    "options": [".c", ".cpp", ".h", ".cs"],
+                    "correct_option": ".cpp"
+                },
+                {
+                    "question_text": "Which standard library provides input and output functionalities in C++?",
+                    "options": ["stdio.h", "iostream", "stdlib.h", "fstream"],
+                    "correct_option": "iostream"
+                },
+                {
+                    "question_text": "What is the correct syntax for including a header file in C++?",
+                    "options": ["#include <header.h>", "import header.h", "include header.h", "#header <header.h>"],
+                    "correct_option": "#include <header.h>"
+                },
+                {
+                    "question_text": "Which function serves as the entry point of a C++ program?",
+                    "options": ["start()", "main()", "execute()", "run()"],
+                    "correct_option": "main()"
+                },
+                {
+                    "question_text": "Which statement is used to print output to the console in C++?",
+                    "options": ["print()", "cout <<", "console.log()", "display()"],
+                    "correct_option": "cout <<"
+                },
+                {
+                    "question_text": "Which symbol is used to terminate a statement in C++?",
+                    "options": [".", "?", "!", ";"],
+                    "correct_option": ";"
+                },
+                {
+                    "question_text": "Which keyword is used to declare a constant variable in C++?",
+                    "options": ["constant", "const", "final", "define"],
+                    "correct_option": "const"
+                },
+                {
+                    "question_text": "Which data type is used to store a single character in C++?",
+                    "options": ["char", "string", "int", "float"],
+                    "correct_option": "char"
+                },
+                {
+                    "question_text": "Which operator is used for comments in C++?",
+                    "options": ["//", "#", "/* */", "--"],
+                    "correct_option": "//"
+                }
+            ]
+        },
+        {
+            "module_id": "cpp_control_flow",
+            "module_name": "Operators and Control Flow",
+            "questions": [
+                {
+                    "question_text": "Which operator is used for logical AND in C++?",
+                    "options": ["&", "&&", "and", "||"],
+                    "correct_option": "&&"
+                },
+                {
+                    "question_text": "Which statement is used for conditional execution?",
+                    "options": ["if", "for", "while", "switch"],
+                    "correct_option": "if"
+                },
+                {
+                    "question_text": "Which loop is used when the number of iterations is known?",
+                    "options": ["while", "do-while", "for", "foreach"],
+                    "correct_option": "for"
+                },
+                {
+                    "question_text": "Which statement is used to terminate a loop?",
+                    "options": ["exit", "break", "continue", "stop"],
+                    "correct_option": "break"
+                },
+                {
+                    "question_text": "Which keyword is used for a switch-case block?",
+                    "options": ["case", "switch", "choose", "if"],
+                    "correct_option": "switch"
+                },
+                {
+                    "question_text": "Which operator is used for modulus operation in C++?",
+                    "options": ["/", "%", "mod", "*"],
+                    "correct_option": "%"
+                },
+                {
+                    "question_text": "Which loop executes at least once regardless of condition?",
+                    "options": ["for", "while", "do-while", "foreach"],
+                    "correct_option": "do-while"
+                },
+                {
+                    "question_text": "What will be the output of '5 > 3 && 2 < 4'?",
+                    "options": ["True", "False", "None", "Error"],
+                    "correct_option": "True"
+                },
+                {
+                    "question_text": "Which statement is used to skip an iteration of a loop?",
+                    "options": ["break", "skip", "continue", "exit"],
+                    "correct_option": "continue"
+                },
+                {
+                    "question_text": "Which operator is used for ternary conditional evaluation?",
+                    "options": [":?", "?:", "??", "if-else"],
+                    "correct_option": "?:"
+                }
+            ]
+        },
+        {
+            "module_id": "cpp_functions_scope",
+            "module_name": "Functions and Scope",
+            "questions": [
+                {
+                    "question_text": "Which keyword is used to define a function in C++?",
+                    "options": ["func", "define", "void", "int"],
+                    "correct_option": "void"
+                },
+                {
+                    "question_text": "What is function overloading in C++?",
+                    "options": ["Using the same function name with different parameters", "Using functions inside a class", "Using a function in multiple files", "None of the above"],
+                    "correct_option": "Using the same function name with different parameters"
+                },
+                {
+                    "question_text": "Which keyword is used to return a value from a function?",
+                    "options": ["return", "send", "output", "yield"],
+                    "correct_option": "return"
+                },
+                {
+                    "question_text": "Which keyword is used for function declaration without a definition?",
+                    "options": ["extern", "static", "virtual", "abstract"],
+                    "correct_option": "extern"
+                },
+                {
+                    "question_text": "Which function is automatically called when an object is created?",
+                    "options": ["Constructor", "Destructor", "Main", "Allocate"],
+                    "correct_option": "Constructor"
+                },
+                {
+                    "question_text": "What is the return type of a constructor?",
+                    "options": ["void", "int", "None", "Depends on the class"],
+                    "correct_option": "None"
+                },
+                {
+                    "question_text": "Which function is called automatically when an object is destroyed?",
+                    "options": ["Constructor", "Destructor", "Deallocate", "Release"],
+                    "correct_option": "Destructor"
+                },
+                {
+                    "question_text": "Which keyword is used to prevent modification of a function argument?",
+                    "options": ["static", "const", "volatile", "mutable"],
+                    "correct_option": "const"
+                },
+                {
+                    "question_text": "Which function is used to execute another function dynamically?",
+                    "options": ["Callback", "Function pointer", "Virtual function", "Lambda"],
+                    "correct_option": "Function pointer"
+                },
+                {
+                    "question_text": "Which scope defines a variable that is accessible only within the file it is declared?",
+                    "options": ["Global", "Local", "Static", "File"],
+                    "correct_option": "File"
+                }
+            ]
+        },
+        {
+            "module_id": "cpp_oop",
+            "module_name": "Object-Oriented Programming (OOP) Concepts",
+            "questions": [
+                {
+                    "question_text": "Which keyword is used to define a class in C++?",
+                    "options": ["class", "struct", "object", "type"],
+                    "correct_option": "class"
+                },
+                {
+                    "question_text": "Which concept allows a class to inherit methods from another class?",
+                    "options": ["Encapsulation", "Polymorphism", "Inheritance", "Abstraction"],
+                    "correct_option": "Inheritance"
+                },
+                {
+                    "question_text": "Which function is used to create an instance of a class?",
+                    "options": ["new", "malloc", "allocate", "instantiate"],
+                    "correct_option": "new"
+                },
+                {
+                    "question_text": "Which access specifier restricts access to class members within the same class?",
+                    "options": ["public", "private", "protected", "internal"],
+                    "correct_option": "private"
+                },
+                {
+                    "question_text": "Which OOP principle allows multiple functions with the same name but different parameters?",
+                    "options": ["Encapsulation", "Inheritance", "Polymorphism", "Abstraction"],
+                    "correct_option": "Polymorphism"
+                },
+                {
+                    "question_text": "What is the main benefit of encapsulation?",
+                    "options": ["Code reusability", "Data hiding", "Faster execution", "Memory optimization"],
+                    "correct_option": "Data hiding"
+                },
+                {
+                    "question_text": "Which keyword is used to call a base class constructor in C++?",
+                    "options": ["base", "super", "parent", "this"],
+                    "correct_option": "super"
+                },
+                {
+                    "question_text": "Which of the following best describes a virtual function?",
+                    "options": ["A function that is always inline", "A function that can be overridden in derived classes", "A function that cannot be accessed", "A function with no definition"],
+                    "correct_option": "A function that can be overridden in derived classes"
+                },
+                {
+                    "question_text": "What is an abstract class in C++?",
+                    "options": ["A class that cannot be instantiated", "A class with only static methods", "A class that supports multiple inheritance", "A class with no variables"],
+                    "correct_option": "A class that cannot be instantiated"
+                },
+                {
+                    "question_text": "Which keyword is used to declare an abstract method in C++?",
+                    "options": ["virtual", "abstract", "interface", "override"],
+                    "correct_option": "virtual"
+                }
+            ]
+        },
+        {
+            "module_id": "cpp_memory_management",
+            "module_name": "Memory Management and Pointers",
+            "questions": [
+                {
+                    "question_text": "What is a pointer in C++?",
+                    "options": ["A variable that stores an address", "A reference to another variable", "A function argument", "A special keyword"],
+                    "correct_option": "A variable that stores an address"
+                },
+                {
+                    "question_text": "Which operator is used to allocate memory dynamically?",
+                    "options": ["malloc", "alloc", "new", "memory"],
+                    "correct_option": "new"
+                },
+                {
+                    "question_text": "Which operator is used to deallocate memory in C++?",
+                    "options": ["delete", "free", "remove", "dispose"],
+                    "correct_option": "delete"
+                },
+                {
+                    "question_text": "What is a NULL pointer?",
+                    "options": ["A pointer with value zero", "A pointer to a memory location", "A pointer with garbage value", "A function pointer"],
+                    "correct_option": "A pointer with value zero"
+                },
+                {
+                    "question_text": "Which function reallocates memory dynamically?",
+                    "options": ["malloc", "realloc", "calloc", "resize"],
+                    "correct_option": "realloc"
+                },
+                {
+                    "question_text": "What happens if you delete a pointer twice?",
+                    "options": ["Memory is freed twice", "Undefined behavior", "Segmentation fault", "Compilation error"],
+                    "correct_option": "Undefined behavior"
+                },
+                {
+                    "question_text": "Which type of pointer can point to any data type?",
+                    "options": ["Generic pointer", "Void pointer", "Function pointer", "Constant pointer"],
+                    "correct_option": "Void pointer"
+                },
+                {
+                    "question_text": "Which C++ feature prevents memory leaks?",
+                    "options": ["Smart pointers", "Regular pointers", "Garbage collection", "Dynamic allocation"],
+                    "correct_option": "Smart pointers"
+                },
+                {
+                    "question_text": "Which of the following is a smart pointer type in C++?",
+                    "options": ["auto_ptr", "unique_ptr", "shared_ptr", "All of the above"],
+                    "correct_option": "All of the above"
+                },
+                {
+                    "question_text": "Which header file is needed for smart pointers?",
+                    "options": ["<memory>", "<pointers>", "<stdlib.h>", "<smart.h>"],
+                    "correct_option": "<memory>"
+                }
+            ]
+        },
+        {
+            "module_id": "cpp_templates_stl",
+            "module_name": "Templates and the Standard Template Library (STL)",
+            "questions": [
+                {
+                    "question_text": "What is the purpose of templates in C++?",
+                    "options": ["To allow generic programming", "To create multiple instances of a function", "To define data types dynamically", "To allocate memory dynamically"],
+                    "correct_option": "To allow generic programming"
+                },
+                {
+                    "question_text": "Which keyword is used to define a template in C++?",
+                    "options": ["template", "typename", "generic", "class"],
+                    "correct_option": "template"
+                },
+                {
+                    "question_text": "What does STL stand for in C++?",
+                    "options": ["Standard Template Library", "Standard Typing Library", "System Type Library", "Static Template Library"],
+                    "correct_option": "Standard Template Library"
+                },
+                {
+                    "question_text": "Which of the following is NOT a component of STL?",
+                    "options": ["Algorithms", "Containers", "Iterators", "Functions"],
+                    "correct_option": "Functions"
+                },
+                {
+                    "question_text": "Which STL container stores key-value pairs?",
+                    "options": ["vector", "list", "map", "deque"],
+                    "correct_option": "map"
+                },
+                {
+                    "question_text": "Which STL container follows Last In First Out (LIFO)?",
+                    "options": ["queue", "priority_queue", "stack", "vector"],
+                    "correct_option": "stack"
+                },
+                {
+                    "question_text": "Which STL algorithm is used to sort elements?",
+                    "options": ["sort()", "order()", "arrange()", "classify()"],
+                    "correct_option": "sort()"
+                },
+                {
+                    "question_text": "Which header file is required for using STL containers?",
+                    "options": ["<stl>", "<containers>", "<vector>", "<algorithm>"],
+                    "correct_option": "<vector>"
+                },
+                {
+                    "question_text": "Which container is best for fast insertion and deletion at both ends?",
+                    "options": ["vector", "list", "deque", "set"],
+                    "correct_option": "deque"
+                },
+                {
+                    "question_text": "Which STL container does not allow duplicate elements?",
+                    "options": ["vector", "set", "multiset", "list"],
+                    "correct_option": "set"
+                }
+            ]
+        },
+        {
+            "module_id": "cpp_file_handling",
+            "module_name": "File Handling in C++",
+            "questions": [
+                {
+                    "question_text": "Which library is required for file handling in C++?",
+                    "options": ["<iostream>", "<fstream>", "<file>", "<stdlib.h>"],
+                    "correct_option": "<fstream>"
+                },
+                {
+                    "question_text": "Which class is used to write to a file in C++?",
+                    "options": ["ifstream", "ofstream", "fstream", "file"],
+                    "correct_option": "ofstream"
+                },
+                {
+                    "question_text": "Which class is used to read from a file in C++?",
+                    "options": ["ifstream", "ofstream", "fstream", "file"],
+                    "correct_option": "ifstream"
+                },
+                {
+                    "question_text": "Which mode is used to append data to a file?",
+                    "options": ["ios::in", "ios::out", "ios::app", "ios::ate"],
+                    "correct_option": "ios::app"
+                },
+                {
+                    "question_text": "Which function is used to open a file in C++?",
+                    "options": ["open()", "fopen()", "file.open()", "create()"],
+                    "correct_option": "open()"
+                },
+                {
+                    "question_text": "Which function is used to close a file in C++?",
+                    "options": ["end()", "terminate()", "close()", "finish()"],
+                    "correct_option": "close()"
+                },
+                {
+                    "question_text": "What happens if you try to open a non-existent file in read mode?",
+                    "options": ["Creates a new file", "Throws an error", "Returns an empty file", "None of the above"],
+                    "correct_option": "Throws an error"
+                },
+                {
+                    "question_text": "Which of the following is a file stream class in C++?",
+                    "options": ["fstream", "ifstream", "ofstream", "All of the above"],
+                    "correct_option": "All of the above"
+                },
+                {
+                    "question_text": "Which mode is used to read and write to a file?",
+                    "options": ["ios::in", "ios::out", "ios::in | ios::out", "ios::app"],
+                    "correct_option": "ios::in | ios::out"
+                },
+                {
+                    "question_text": "Which function is used to check if a file is open?",
+                    "options": ["is_open()", "file_exists()", "check_file()", "open_status()"],
+                    "correct_option": "is_open()"
+                }
+            ]
+        },
+        {
+            "module_id": "cpp_advanced_optimization",
+            "module_name": "Advanced Topics and Optimization Techniques",
+            "questions": [
+                {
+                    "question_text": "Which keyword is used to declare an inline function in C++?",
+                    "options": ["inline", "fast", "quick", "macro"],
+                    "correct_option": "inline"
+                },
+                {
+                    "question_text": "Which optimization technique reduces redundant computations?",
+                    "options": ["Loop Unrolling", "Common Subexpression Elimination", "Inlining", "Dead Code Elimination"],
+                    "correct_option": "Common Subexpression Elimination"
+                },
+                {
+                    "question_text": "Which C++ feature helps manage large codebases efficiently?",
+                    "options": ["Namespaces", "Templates", "STL", "Macros"],
+                    "correct_option": "Namespaces"
+                },
+                {
+                    "question_text": "Which data structure is best suited for fast searching?",
+                    "options": ["Array", "Linked List", "Hash Table", "Stack"],
+                    "correct_option": "Hash Table"
+                },
+                {
+                    "question_text": "Which compiler flag enables optimizations in C++?",
+                    "options": ["-O1", "-O2", "-O3", "All of the above"],
+                    "correct_option": "All of the above"
+                },
+                {
+                    "question_text": "Which of the following helps reduce function call overhead?",
+                    "options": ["Inlining", "Recursion", "Pointer arithmetic", "Heap allocation"],
+                    "correct_option": "Inlining"
+                },
+                {
+                    "question_text": "Which tool is commonly used for performance profiling in C++?",
+                    "options": ["GDB", "Valgrind", "Gprof", "Both Valgrind and Gprof"],
+                    "correct_option": "Both Valgrind and Gprof"
+                },
+                {
+                    "question_text": "Which approach reduces memory fragmentation in dynamic allocation?",
+                    "options": ["Memory Pooling", "Garbage Collection", "Stack Allocation", "Loop Unrolling"],
+                    "correct_option": "Memory Pooling"
+                },
+                {
+                    "question_text": "Which optimization technique eliminates unnecessary code?",
+                    "options": ["Inlining", "Dead Code Elimination", "Loop Unrolling", "Branch Prediction"],
+                    "correct_option": "Dead Code Elimination"
+                },
+                {
+                    "question_text": "Which concept reduces branch mispredictions in CPUs?",
+                    "options": ["Loop Optimization", "Branch Prediction", "Function Inlining", "Memory Pooling"],
+                    "correct_option": "Branch Prediction"
+                }
+            ]
+        }
+    ]
+}

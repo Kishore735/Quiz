@@ -1,0 +1,452 @@
+{
+    "modules": [
+        {
+            "module_id": "c_basics",
+            "module_name": "C Basics",
+            "questions": [
+                {
+                    "question_text": "What is C?",
+                    "options": ["A programming language", "A database", "An operating system", "A text editor"],
+                    "correct_option": "A programming language"
+                },
+                {
+                    "question_text": "Which symbol is used to end a statement in C?",
+                    "options": [".", ",", ";", ":"],
+                    "correct_option": ";"
+                },
+                {
+                    "question_text": "Which function is used to display output in C?",
+                    "options": ["print()", "printf()", "echo()", "disp()"],
+                    "correct_option": "printf()"
+                },
+                {
+                    "question_text": "Which data type is used to store a single character?",
+                    "options": ["char", "string", "int", "float"],
+                    "correct_option": "char"
+                },
+                {
+                    "question_text": "What is the correct format specifier for integers?",
+                    "options": ["%d", "%c", "%f", "%s"],
+                    "correct_option": "%d"
+                },
+                {
+                    "question_text": "Which of the following is a valid variable name in C?",
+                    "options": ["2var", "_var", "my-var", "int"],
+                    "correct_option": "_var"
+                },
+                {
+                    "question_text": "Which header file is required for input/output functions?",
+                    "options": ["stdio.h", "stdlib.h", "conio.h", "math.h"],
+                    "correct_option": "stdio.h"
+                },
+                {
+                    "question_text": "Which function is used to take input in C?",
+                    "options": ["input()", "scan()", "scanf()", "get()"],
+                    "correct_option": "scanf()"
+                },
+                {
+                    "question_text": "What is the default return type of main() function in C?",
+                    "options": ["void", "int", "float", "char"],
+                    "correct_option": "int"
+                },
+                {
+                    "question_text": "Which keyword is used to define a constant value?",
+                    "options": ["define", "const", "final", "constant"],
+                    "correct_option": "const"
+                }
+            ]
+        },
+        {
+            "module_id": "control_flow",
+            "module_name": "Control Flow (Loops & Conditions)",
+            "questions": [
+                {
+                    "question_text": "Which statement is used for conditional execution?",
+                    "options": ["for", "while", "if", "switch"],
+                    "correct_option": "if"
+                },
+                {
+                    "question_text": "Which loop is used when the number of iterations is known?",
+                    "options": ["while", "do-while", "for", "switch"],
+                    "correct_option": "for"
+                },
+                {
+                    "question_text": "Which statement is used to terminate a loop?",
+                    "options": ["exit", "break", "stop", "end"],
+                    "correct_option": "break"
+                },
+                {
+                    "question_text": "Which loop always executes at least once?",
+                    "options": ["for", "while", "do-while", "if"],
+                    "correct_option": "do-while"
+                },
+                {
+                    "question_text": "Which statement is used to skip an iteration in a loop?",
+                    "options": ["skip", "continue", "break", "jump"],
+                    "correct_option": "continue"
+                },
+                {
+                    "question_text": "Which keyword is used in switch-case?",
+                    "options": ["when", "choose", "switch", "select"],
+                    "correct_option": "switch"
+                },
+                {
+                    "question_text": "Which logical operator represents AND?",
+                    "options": ["&", "&&", "and", "|"],
+                    "correct_option": "&&"
+                },
+                {
+                    "question_text": "Which logical operator represents OR?",
+                    "options": ["&", "|", "||", "or"],
+                    "correct_option": "||"
+                },
+                {
+                    "question_text": "What will be the output of '5 > 3 && 2 < 4'?",
+                    "options": ["True", "False", "None", "Error"],
+                    "correct_option": "True"
+                },
+                {
+                    "question_text": "What is the result of '5 > 3 || 2 > 4'?",
+                    "options": ["True", "False", "None", "Error"],
+                    "correct_option": "True"
+                }
+            ]
+        },
+        {
+            "module_id": "functions_scope",
+            "module_name": "Functions and Scope",
+            "questions": [
+                {
+                    "question_text": "Which keyword is used to define a function in C?",
+                    "options": ["func", "def", "void", "int"],
+                    "correct_option": "void"
+                },
+                {
+                    "question_text": "What is the default return type of a function in C?",
+                    "options": ["void", "int", "float", "char"],
+                    "correct_option": "int"
+                },
+                {
+                    "question_text": "Which keyword is used to return a value from a function?",
+                    "options": ["return", "send", "output", "yield"],
+                    "correct_option": "return"
+                },
+                {
+                    "question_text": "What is function overloading in C?",
+                    "options": ["Defining multiple functions with the same name but different parameters", "Using a function inside another function", "Returning multiple values from a function", "None of the above"],
+                    "correct_option": "None of the above"
+                },
+                {
+                    "question_text": "Which storage class is used to keep a variable value even after a function exits?",
+                    "options": ["auto", "register", "static", "extern"],
+                    "correct_option": "static"
+                },
+                {
+                    "question_text": "Which function is called automatically when a program starts execution?",
+                    "options": ["start()", "main()", "execute()", "run()"],
+                    "correct_option": "main()"
+                },
+                {
+                    "question_text": "What is the scope of a variable declared inside a function?",
+                    "options": ["Global", "Local", "Static", "External"],
+                    "correct_option": "Local"
+                },
+                {
+                    "question_text": "Which keyword is used to declare an external function in another file?",
+                    "options": ["static", "extern", "global", "volatile"],
+                    "correct_option": "extern"
+                },
+                {
+                    "question_text": "Which type of function does not return a value?",
+                    "options": ["void function", "int function", "char function", "float function"],
+                    "correct_option": "void function"
+                },
+                {
+                    "question_text": "Which of the following is a correct function prototype?",
+                    "options": ["int sum(int, int);", "sum(int a, int b);", "int sum(a, b);", "void sum(int a, b);"],
+                    "correct_option": "int sum(int, int);"
+                }
+            ]
+        },
+        {
+            "module_id": "arrays_strings",
+            "module_name": "Arrays and Strings",
+            "questions": [
+                {
+                    "question_text": "Which data type is used to store a sequence of characters in C?",
+                    "options": ["char", "string", "char array", "text"],
+                    "correct_option": "char array"
+                },
+                {
+                    "question_text": "What is the index of the first element in a C array?",
+                    "options": ["0", "1", "-1", "Depends on compiler"],
+                    "correct_option": "0"
+                },
+                {
+                    "question_text": "Which function is used to copy one string to another?",
+                    "options": ["strcpy()", "copy()", "stringcpy()", "copystr()"],
+                    "correct_option": "strcpy()"
+                },
+                {
+                    "question_text": "How do you declare a one-dimensional integer array in C?",
+                    "options": ["int arr[];", "int arr[10];", "array int arr;", "int array[10];"],
+                    "correct_option": "int arr[10];"
+                },
+                {
+                    "question_text": "Which function is used to concatenate two strings?",
+                    "options": ["strcat()", "concat()", "stringcat()", "joinstr()"],
+                    "correct_option": "strcat()"
+                },
+                {
+                    "question_text": "Which of the following correctly accesses an element in an array?",
+                    "options": ["arr(2)", "arr[2]", "arr{2}", "arr<2>"],
+                    "correct_option": "arr[2]"
+                },
+                {
+                    "question_text": "What happens if you access an array out of its bound?",
+                    "options": ["Compilation error", "Runtime error", "Garbage value", "None of the above"],
+                    "correct_option": "Garbage value"
+                },
+                {
+                    "question_text": "Which function is used to find the length of a string?",
+                    "options": ["length()", "strlen()", "size()", "strlength()"],
+                    "correct_option": "strlen()"
+                },
+                {
+                    "question_text": "What is the last character in every C string?",
+                    "options": ["NULL ()", "Space (' ')", "Newline ('\n')", "Endline ('\r')"],
+                    "correct_option": "NULL ()"
+                },
+                {
+                    "question_text": "Which function is used to compare two strings?",
+                    "options": ["strcmp()", "compare()", "strcompare()", "cmpstr()"],
+                    "correct_option": "strcmp()"
+                }
+            ]
+        },
+        {
+            "module_id": "pointers_memory",
+            "module_name": "Pointers and Dynamic Memory Allocation",
+            "questions": [
+                {
+                    "question_text": "What is a pointer in C?",
+                    "options": ["A variable that stores an address", "A reference to another variable", "A function argument", "A special keyword"],
+                    "correct_option": "A variable that stores an address"
+                },
+                {
+                    "question_text": "Which operator is used to access the address of a variable?",
+                    "options": ["*", "&", "->", "%"],
+                    "correct_option": "&"
+                },
+                {
+                    "question_text": "Which function is used for dynamic memory allocation?",
+                    "options": ["malloc()", "alloc()", "new()", "memalloc()"],
+                    "correct_option": "malloc()"
+                },
+                {
+                    "question_text": "What is the return type of malloc()?",
+                    "options": ["void*", "int", "char*", "float*"],
+                    "correct_option": "void*"
+                },
+                {
+                    "question_text": "Which function is used to free dynamically allocated memory?",
+                    "options": ["delete", "free()", "remove()", "release()"],
+                    "correct_option": "free()"
+                },
+                {
+                    "question_text": "What does the NULL pointer represent?",
+                    "options": ["An uninitialized pointer", "A pointer with address 0", "A memory leak", "A corrupted pointer"],
+                    "correct_option": "A pointer with address 0"
+                },
+                {
+                    "question_text": "Which function reallocates memory dynamically?",
+                    "options": ["malloc()", "realloc()", "calloc()", "memresize()"],
+                    "correct_option": "realloc()"
+                },
+                {
+                    "question_text": "Which function initializes allocated memory to zero?",
+                    "options": ["malloc()", "calloc()", "memset()", "init()"],
+                    "correct_option": "calloc()"
+                },
+                {
+                    "question_text": "Which symbol is used to dereference a pointer?",
+                    "options": ["*", "&", "->", "#"],
+                    "correct_option": "*"
+                },
+                {
+                    "question_text": "What happens if you free a pointer twice?",
+                    "options": ["Memory is released twice", "Undefined behavior", "Compiler error", "Segmentation fault"],
+                    "correct_option": "Undefined behavior"
+                }
+            ]
+        },
+        {
+            "module_id": "structures_unions_files",
+            "module_name": "Structures, Unions, and File Handling",
+            "questions": [
+                {
+                    "question_text": "Which keyword is used to define a structure in C?",
+                    "options": ["struct", "class", "union", "record"],
+                    "correct_option": "struct"
+                },
+                {
+                    "question_text": "Which keyword is used to define a union in C?",
+                    "options": ["struct", "union", "class", "shared"],
+                    "correct_option": "union"
+                },
+                {
+                    "question_text": "How do you access a structure member?",
+                    "options": ["With a dot (.)", "With an arrow (->)", "With a colon (:)", "With a slash (/)"] ,
+                    "correct_option": "With a dot (.)"
+                },
+                {
+                    "question_text": "Which file mode is used to open a file for writing only?",
+                    "options": ["r", "w", "a", "rw"],
+                    "correct_option": "w"
+                },
+                {
+                    "question_text": "Which function is used to read data from a file?",
+                    "options": ["fscanf()", "fread()", "fgets()", "All of the above"],
+                    "correct_option": "All of the above"
+                },
+                {
+                    "question_text": "What is the purpose of the fclose() function?",
+                    "options": ["Close a file", "Delete a file", "Flush the file buffer", "Create a file"],
+                    "correct_option": "Close a file"
+                },
+                {
+                    "question_text": "What is the main difference between a structure and a union?",
+                    "options": ["Union shares memory among members", "Structure allows inheritance", "Union cannot store multiple values", "Structure is faster than union"],
+                    "correct_option": "Union shares memory among members"
+                },
+                {
+                    "question_text": "Which function is used to write data to a file?",
+                    "options": ["fprintf()", "fwrite()", "fputs()", "All of the above"],
+                    "correct_option": "All of the above"
+                },
+                {
+                    "question_text": "Which file mode is used to append data to an existing file?",
+                    "options": ["r", "w", "a", "x"],
+                    "correct_option": "a"
+                },
+                {
+                    "question_text": "Which library must be included for file handling in C?",
+                    "options": ["stdio.h", "stdlib.h", "string.h", "file.h"],
+                    "correct_option": "stdio.h"
+                }
+            ]
+        },
+        {
+            "module_id": "preprocessors_macros",
+            "module_name": "Preprocessors and Macros",
+            "questions": [
+                {
+                    "question_text": "Which symbol is used to define a macro in C?",
+                    "options": ["@", "#", "$", "&"],
+                    "correct_option": "#"
+                },
+                {
+                    "question_text": "Which directive is used to include a header file in C?",
+                    "options": ["#define", "#include", "#import", "#header"],
+                    "correct_option": "#include"
+                },
+                {
+                    "question_text": "What is the purpose of #define in C?",
+                    "options": ["To define a function", "To define a constant or macro", "To declare a variable", "To include a library"],
+                    "correct_option": "To define a constant or macro"
+                },
+                {
+                    "question_text": "Which preprocessor directive is used for conditional compilation?",
+                    "options": ["#if", "#ifdef", "#ifndef", "All of the above"],
+                    "correct_option": "All of the above"
+                },
+                {
+                    "question_text": "What does the #undef directive do?",
+                    "options": ["Undefines a macro", "Deletes a variable", "Stops compilation", "Ignores a function"],
+                    "correct_option": "Undefines a macro"
+                },
+                {
+                    "question_text": "Which of the following is a predefined macro in C?",
+                    "options": ["__FILE__", "__DATE__", "__LINE__", "All of the above"],
+                    "correct_option": "All of the above"
+                },
+                {
+                    "question_text": "What does the #pragma directive do?",
+                    "options": ["Issues special commands to the compiler", "Defines a function", "Declares a variable", "Includes a header file"],
+                    "correct_option": "Issues special commands to the compiler"
+                },
+                {
+                    "question_text": "Which macro can be used to prevent multiple inclusions of a header file?",
+                    "options": ["#define", "#pragma once", "#ifndef", "Both #pragma once and #ifndef"],
+                    "correct_option": "Both #pragma once and #ifndef"
+                },
+                {
+                    "question_text": "Which directive is used to stop compilation when an error occurs?",
+                    "options": ["#error", "#stop", "#abort", "#halt"],
+                    "correct_option": "#error"
+                },
+                {
+                    "question_text": "What is the output of the macro #define SQUARE(x) x*x when called as SQUARE(4+2)?",
+                    "options": ["36", "16", "10", "Syntax Error"],
+                    "correct_option": "10"
+                }
+            ]
+        },
+        {
+            "module_id": "advanced_topics_optimization",
+            "module_name": "Advanced Topics and Optimization Techniques",
+            "questions": [
+                {
+                    "question_text": "Which optimization technique reduces redundant computations?",
+                    "options": ["Loop Unrolling", "Common Subexpression Elimination", "Inlining", "Dead Code Elimination"],
+                    "correct_option": "Common Subexpression Elimination"
+                },
+                {
+                    "question_text": "Which keyword is used to hint the compiler to optimize a variable's access?",
+                    "options": ["static", "register", "volatile", "const"],
+                    "correct_option": "register"
+                },
+                {
+                    "question_text": "What is loop unrolling?",
+                    "options": ["Reducing loop iterations", "Increasing loop efficiency by executing multiple iterations at once", "Removing loops", "Replacing loops with recursion"],
+                    "correct_option": "Increasing loop efficiency by executing multiple iterations at once"
+                },
+                {
+                    "question_text": "Which of the following is NOT a common optimization technique?",
+                    "options": ["Dead Code Elimination", "Inlining", "Garbage Collection", "Loop Optimization"],
+                    "correct_option": "Garbage Collection"
+                },
+                {
+                    "question_text": "Which data structure is best suited for fast searching?",
+                    "options": ["Array", "Linked List", "Hash Table", "Stack"],
+                    "correct_option": "Hash Table"
+                },
+                {
+                    "question_text": "Which technique improves cache performance in programs?",
+                    "options": ["Memory Pooling", "Loop Fusion", "Cache Blocking", "All of the above"],
+                    "correct_option": "All of the above"
+                },
+                {
+                    "question_text": "Which compiler optimization technique removes unreachable code?",
+                    "options": ["Dead Code Elimination", "Loop Optimization", "Inlining", "Branch Prediction"],
+                    "correct_option": "Dead Code Elimination"
+                },
+                {
+                    "question_text": "Which profiling tool is commonly used for performance analysis?",
+                    "options": ["GDB", "Valgrind", "Gprof", "Both Valgrind and Gprof"],
+                    "correct_option": "Both Valgrind and Gprof"
+                },
+                {
+                    "question_text": "Which approach reduces memory fragmentation in dynamic allocation?",
+                    "options": ["Memory Pooling", "Garbage Collection", "Stack Allocation", "Loop Unrolling"],
+                    "correct_option": "Memory Pooling"
+                },
+                {
+                    "question_text": "What is the benefit of function inlining?",
+                    "options": ["Reduces function call overhead", "Increases memory usage", "Slows down execution", "Reduces code readability"],
+                    "correct_option": "Reduces function call overhead"
+                }
+            ]
+        }
+    ]
+}

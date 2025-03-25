@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Selection | Programming Quiz App</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-auth-compat.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Programming Quiz</h1>
+            <div class="user-info">
+                <span id="user-display-name">Guest</span>
+                <button id="logout-btn" class="btn btn-small">Logout</button>
+            </div>
+        </header>
+
+        <main>
+            <!-- Language Selection Section -->
+            <section id="language-selection-section" class="quiz-selection-section">
+                <h2>Select a Programming Language</h2>
+                <p>Choose a language to test your knowledge:</p>
+                
+                <div id="language-options" class="language-grid">
+                    <!-- Language options will be inserted here -->
+                    <div class="loading-spinner">Loading languages...</div>
+                </div>
+            </section>
+
+            <!-- Module Selection Section (Initially Hidden) -->
+            <section id="module-selection-section" class="quiz-selection-section" style="display: none;">
+                <div class="section-header">
+                    <button id="back-to-languages" class="btn btn-small btn-secondary">
+                        <i class="fas fa-arrow-left"></i> Back
+                    </button>
+                    <h2>Select a Module for <span id="selected-language-name">Python</span></h2>
+                </div>
+                <p>Choose a module to begin your quiz:</p>
+                
+                <div id="module-options" class="module-grid">
+                    <!-- Module options will be inserted here -->
+                    <div class="loading-spinner">Loading modules...</div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Programming Quiz App</p>
+        </footer>
+    </div>
+
+    <!-- Include Firebase configuration -->
+    <script src="../js/firebase-config.js"></script>
+    <script src="../js/auth.js"></script>
+    <script>
+        // Initialize language selection
+        document.addEventListener('DOMContentLoaded', function() {
+            // Check authentication
+            firebase.auth().onAuthStateChanged(function(user) {
+                if (user) {
+                    // User is signed in
+                    document.getElementById('user-display-name').textContent = user.displayName || user.email || 'User';
+                } else {
+                    // No user is signed in, redirect to login
+                    window.location.href = 'login.html';
+                }
+            });
+
+            // Handle logout
+            document.getElementById('logout-btn').addEventListener('click', function() {
+                firebase.auth().signOut().then(function() {
+                    window.location.href = 'login.html';
+                }).catch(function(error) {
+                    console.error('Logout error:', error);
+                });
+            });
+
+            // Handle back button
+            document.getElementById('back-to-languages').addEventListener('click', function() {
+                showLanguageSelection();
+            });
+
+            // Fetch languages from Firestore
+            fetchProgrammingLanguages();
+        });
+
+        // Function to show language selection and hide module selection
+        function showLanguageSelection() {
+            document.getElementById('language-selection-section').style.display = 'block';
+            document.getElementById('module-selection-section').style.display = 'none';
+        }
+
+        // Function to hide language selection and show module selection
+        function showModuleSelection(languageId, languageName) {
+            document.getElementById('language-selection-section').style.display = 'none';
+            document.getElementById('module-selection-section').style.display = 'block';
+            document.getElementById('selected-language-name').textContent = languageName;
+            
+            // Store selected language
+            sessionStorage.setItem('selectedLanguageId', languageId);
+            sessionStorage.setItem('selectedLanguageName', languageName);
+            
+            // Fetch modules for the selected language
+            fetchModules(languageId);
+        }
+
+        // Function to fetch programming languages from Firestore
+        function fetchProgrammingLanguages() {
+            const languagesContainer = document.getElementById('language-options');
+            
+            firebase.firestore().collection('programming_languages')
+                .get()
+                .then((querySnapshot) => {
+                    // Clear loading message
+                    languagesContainer.innerHTML = '';
+                    
+                    if (querySnapshot.empty) {
+                        languagesContainer.innerHTML = '<p class="error-message">No programming languages found. Please try again later.</p>';
+                        return;
+                    }
+                    
+                    // Process each language document
+                    querySnapshot.forEach((doc) => {
+                        const data = doc.data();
+                        const langId = doc.id;
+                        const langName = data.name || langId;
+                        const langDescription = data.description || '';
+                        
+                        // Create language card
+                        const langCard = document.createElement('div');
+                        langCard.className = 'language-card';
+                        langCard.innerHTML = `
+                            <div class="language-icon">
+                                <i class="fab fa-${getLangIcon(langId)}"></i>
+                            </div>
+                            <h3>${langName}</h3>
+                            <p>${langDescription}</p>
+                            <button class="btn select-language-btn" data-lang-id="${langId}" data-lang-name="${langName}">
+                                Select Modules <i class="fas fa-chevron-right"></i>
+                            </button>
+                        `;
+                        
+                        // Add click event to select this language
+                        const selectBtn = langCard.querySelector('.select-language-btn');
+                        selectBtn.addEventListener('click', function() {
+                            const langId = this.getAttribute('data-lang-id');
+                            const langName = this.getAttribute('data-lang-name');
+                            showModuleSelection(langId, langName);
+                        });
+                        
+                        languagesContainer.appendChild(langCard);
+                    });
+                })
+                .catch((error) => {
+                    console.error("Error fetching languages: ", error);
+                    languagesContainer.innerHTML = `
+                        <p class="error-message">Failed to load programming languages. Error: ${error.message}</p>
+                        <button class="btn" onclick="fetchProgrammingLanguages()">Try Again</button>
+                    `;
+                });
+        }
+
+        // Function to get icon class for a language
+        function getLangIcon(langId) {
+            const iconMap = {
+                'python': 'python',
+                'java': 'java',
+                'c': 'code',
+                'cpp': 'code'
+            };
+            
+            return iconMap[langId] || 'code';
+        }
+
+        // Function to fetch modules for a selected language
+        function fetchModules(languageId) {
+            const modulesContainer = document.getElementById('module-options');
+            modulesContainer.innerHTML = '<div class="loading-spinner">Loading modules...</div>';
+            
+            // Reference to the modules subcollection for the selected language
+            const modulesRef = firebase.firestore()
+                .collection('programming_languages')
+                .doc(languageId)
+                .collection('modules');
+            
+            modulesRef.get()
+                .then((querySnapshot) => {
+                    // Clear loading message
+                    modulesContainer.innerHTML = '';
+                    
+                    if (querySnapshot.empty) {
+                        modulesContainer.innerHTML = '<p class="error-message">No modules found for this language. Please try another language.</p>';
+                        return;
+                    }
+                    
+                    // Process each module document
+                    querySnapshot.forEach((doc) => {
+                        const moduleId = doc.id;
+                        const displayName = formatModuleName(moduleId);
+                        
+                        // Create module card
+                        const moduleCard = document.createElement('div');
+                        moduleCard.className = 'module-card';
+                        moduleCard.innerHTML = `
+                            <div class="module-icon">
+                                <i class="fas fa-book"></i>
+                            </div>
+                            <h3>${displayName}</h3>
+                            <button class="btn start-quiz-btn" data-module-id="${moduleId}" data-module-name="${displayName}">
+                                Start Quiz <i class="fas fa-play"></i>
+                            </button>
+                        `;
+                        
+                        // Add click event to start quiz with this module
+                        const startBtn = moduleCard.querySelector('.start-quiz-btn');
+                        startBtn.addEventListener('click', function() {
+                            const moduleId = this.getAttribute('data-module-id');
+                            const moduleName = this.getAttribute('data-module-name');
+                            startQuiz(moduleId, moduleName);
+                        });
+                        
+                        modulesContainer.appendChild(moduleCard);
+                    });
+                })
+                .catch((error) => {
+                    console.error("Error fetching modules: ", error);
+                    modulesContainer.innerHTML = `
+                        <p class="error-message">Failed to load modules. Error: ${error.message}</p>
+                        <button class="btn" onclick="fetchModules('${languageId}')">Try Again</button>
+                    `;
+                });
+        }
+
+        // Format module ID into display name
+        function formatModuleName(moduleId) {
+            // Replace underscores with spaces and capitalize each word
+            return moduleId
+                .replace(/_/g, ' ')
+                .replace(/(?:^|\s)\S/g, function(a) { return a.toUpperCase(); });
+        }
+
+        // Function to start the quiz with selected language and module
+        function startQuiz(moduleId, moduleName) {
+            // Store selected module
+            sessionStorage.setItem('selectedModuleId', moduleId);
+            sessionStorage.setItem('selectedModuleName', moduleName);
+            
+            // Redirect to quiz page
+            window.location.href = 'quiz.html';
+        }
+    </script>
+    
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>

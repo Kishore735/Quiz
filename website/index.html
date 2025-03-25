@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeQuiz - Test Your Programming Knowledge</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="js/firebase-config.js" defer></script>
+    <script src="js/auth.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">CodeQuiz</div>
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="pages/quiz-selection.html">Quizzes</a>
+            <button id="login-btn" class="btn">Login</button>
+            <button id="logout-btn" class="btn hidden">Logout</button>
+        </div>
+    </nav>
+    
+    <div class="hero">
+        <div class="container">
+            <h1>Master Programming with CodeQuiz</h1>
+            <p>Test your knowledge in Python, C, C++, and Java with our module-based quizzes.</p>
+            <div class="auth-status">
+                <p id="user-status">You are not logged in.</p>
+            </div>
+            <a href="pages/quiz-selection.html" class="btn btn-primary">Start Quiz</a>
+        </div>
+    </div>
+    
+    <div class="features">
+        <div class="container">
+            <h2>Why CodeQuiz?</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>Multiple Languages</h3>
+                    <p>Python, C, C++, and Java quizzes available</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Module-Based</h3>
+                    <p>Learn step by step with specialized modules</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Real-Time Scoring</h3>
+                    <p>Track your progress and compare with others</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Mobile Friendly</h3>
+                    <p>Practice on any device, anywhere</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 CodeQuiz. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
