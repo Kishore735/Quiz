@@ -7,52 +7,62 @@
                 {
                     "question_text": "What is Python?",
                     "options": ["A programming language", "A snake", "A type of coffee", "A car brand"],
-                    "correct_option": "A programming language"
+                    "correct_option": "A programming language",
+                    "explanation": "Python is a high-level, interpreted programming language known for its readability and versatility. It was created by Guido van Rossum and first released in 1991, and is widely used in web development, data science, artificial intelligence, and many other fields."
                 },
                 {
                     "question_text": "Which keyword is used to define a function in Python?",
                     "options": ["def", "func", "define", "lambda"],
-                    "correct_option": "def"
+                    "correct_option": "def",
+                    "explanation": "The 'def' keyword is used to define a function in Python. It is followed by the function name and parentheses, and introduces the function's code block. For example: def my_function():"
                 },
                 {
                     "question_text": "Which symbol is used for comments in Python?",
                     "options": ["//", "#", "/* */", "--"],
-                    "correct_option": "#"
+                    "correct_option": "#",
+                    "explanation": "The '#' symbol is used for single-line comments in Python. Anything following the '#' on the same line is treated as a comment and ignored by the Python interpreter."
                 },
                 {
                     "question_text": "Which of the following is a valid variable name in Python?",
                     "options": ["2var", "my-var", "_myvar", "if"],
-                    "correct_option": "_myvar"
+                    "correct_option": "_myvar",
+                    "explanation": "In Python, valid variable names must start with a letter (a-z, A-Z) or an underscore (_), followed by letters, numbers, or underscores. '2var' is invalid as it starts with a number, 'my-var' contains a hyphen, and 'if' is a reserved keyword."
                 },
                 {
                     "question_text": "Which function is used to take user input?",
                     "options": ["input()", "read()", "scan()", "get()"],
-                    "correct_option": "input()"
+                    "correct_option": "input()",
+                    "explanation": "The input() function is used to take user input from the console in Python. It reads a line of text from the user and returns it as a string. You can optionally provide a prompt message inside the parentheses."
                 },
                 {
                     "question_text": "Which operator is used for exponentiation?",
                     "options": ["^", "**", "//", "*"],
-                    "correct_option": "**"
+                    "correct_option": "**",
+                    "explanation": "The '**' operator is used for exponentiation in Python. For example, 2 ** 3 calculates 2 raised to the power of 3, which equals 8. The '^' symbol is a bitwise XOR operator, not for exponentiation."
                 },
                 {
                     "question_text": "Which statement is used to exit a loop?",
                     "options": ["exit", "break", "stop", "end"],
-                    "correct_option": "break"
+                    "correct_option": "break",
+                    "explanation": "The 'break' statement is used to immediately exit (terminate) the current loop. When encountered, it transfers control to the first statement after the loop, skipping any remaining iterations."
                 },
                 {
                     "question_text": "Which of these is NOT a Python keyword?",
                     "options": ["elif", "switch", "try", "with"],
-                    "correct_option": "switch"
+                    "correct_option": "switch",
+                    "explanation": "Unlike many other programming languages, Python does not have a 'switch' statement. Instead, Python uses 'if-elif-else' for multiple condition checking or the 'match' statement in newer Python versions for pattern matching."
                 },
                 {
                     "question_text": "What is the default value of a Boolean variable?",
                     "options": ["True", "False", "0", "None"],
-                    "correct_option": "False"
+                    "correct_option": "False",
+                    "explanation": "When a Boolean variable is created without an explicit value, its default value is False. This is important to remember when initializing Boolean flags or conditions."
                 },
                 {
                     "question_text": "Which function converts a string to an integer?",
                     "options": ["int()", "str()", "float()", "char()"],
-                    "correct_option": "int()"
+                    "correct_option": "int()",
+                    "explanation": "The int() function is used to convert a string or float to an integer. For example, int('123') will return the integer 123. If the string cannot be converted, it raises a ValueError."
                 }
             ]
         },
@@ -63,52 +73,62 @@
                 {
                     "question_text": "Which operator is used for logical AND in Python?",
                     "options": ["&", "&&", "and", "||"],
-                    "correct_option": "and"
+                    "correct_option": "and",
+                    "explanation": "The 'and' keyword is used for logical AND operations in Python. It returns True only if both operands are True. Unlike some other languages, Python uses full words for logical operators instead of symbols."
                 },
                 {
                     "question_text": "Which statement is used for conditional execution?",
                     "options": ["if", "for", "while", "switch"],
-                    "correct_option": "if"
+                    "correct_option": "if",
+                    "explanation": "The 'if' statement is used for conditional execution in Python. It allows the program to execute a block of code only if a specified condition is True. It can be followed by 'elif' and 'else' for multiple conditions."
                 },
                 {
                     "question_text": "Which loop is used when the number of iterations is known?",
                     "options": ["while", "do-while", "for", "foreach"],
-                    "correct_option": "for"
+                    "correct_option": "for",
+                    "explanation": "The 'for' loop is typically used when the number of iterations is known or when iterating over a sequence like a list, tuple, or range. In Python, it's particularly versatile and can iterate over various types of collections."
                 },
                 {
                     "question_text": "Which statement is used to terminate a loop?",
                     "options": ["exit", "break", "continue", "stop"],
-                    "correct_option": "break"
+                    "correct_option": "break",
+                    "explanation": "The 'break' statement is used to exit or terminate a loop prematurely. When encountered, it immediately stops the current loop's execution and transfers control to the first statement after the loop."
                 },
                 {
                     "question_text": "Which keyword is used for a switch-case block in Python?",
                     "options": ["case", "switch", "match", "if"],
-                    "correct_option": "match"
+                    "correct_option": "match",
+                    "explanation": "In Python 3.10+, the 'match' keyword was introduced as a structural pattern matching statement, similar to switch-case in other languages. It provides a more powerful and flexible way of pattern matching compared to traditional switch statements."
                 },
                 {
                     "question_text": "Which operator is used for modulus operation in Python?",
                     "options": ["/", "%", "mod", "*"],
-                    "correct_option": "%"
+                    "correct_option": "%",
+                    "explanation": "The '%' operator performs the modulus operation in Python, which returns the remainder of a division. For example, 10 % 3 would return 1, as 10 divided by 3 leaves a remainder of 1."
                 },
                 {
                     "question_text": "Which loop executes at least once regardless of condition?",
                     "options": ["for", "while", "do-while", "None of the above"],
-                    "correct_option": "None of the above"
+                    "correct_option": "None of the above",
+                    "explanation": "Python does not have a built-in do-while loop that guarantees at least one execution. To achieve similar behavior, you would typically use a while True loop with a break condition or manually structure your loop to ensure at least one iteration."
                 },
                 {
                     "question_text": "Which statement is used to skip an iteration of a loop?",
                     "options": ["break", "skip", "continue", "exit"],
-                    "correct_option": "continue"
+                    "correct_option": "continue",
+                    "explanation": "The 'continue' statement skips the rest of the current iteration and moves to the next iteration of the loop. It's useful when you want to skip certain iterations based on a condition without terminating the entire loop."
                 },
                 {
                     "question_text": "Which operator is used for ternary conditional evaluation in Python?",
                     "options": [":?", "?:", "if-else", "None of the above"],
-                    "correct_option": "if-else"
+                    "correct_option": "if-else",
+                    "explanation": "Python uses a unique syntax for ternary operators: value_if_true if condition else value_if_false. For example: x = 10 if a > b else 5. This is different from the ternary operators in languages like C or Java."
                 },
                 {
                     "question_text": "Which keyword is used to define a constant in Python?",
                     "options": ["final", "const", "define", "Python has no built-in constant keyword"],
-                    "correct_option": "Python has no built-in constant keyword"
+                    "correct_option": "Python has no built-in constant keyword",
+                    "explanation": "Python does not have a built-in keyword to define constants. By convention, developers use uppercase variable names to indicate that a variable should be treated as a constant, but this is just a naming convention and does not prevent the value from being changed."
                 }
             ]
         },
@@ -119,52 +139,62 @@
                 {
                     "question_text": "Which keyword is used to define a function in Python?",
                     "options": ["function", "def", "func", "define"],
-                    "correct_option": "def"
+                    "correct_option": "def",
+                    "explanation": "The 'def' keyword is used to define a function in Python. It is followed by the function name, parentheses for parameters, and a colon. For example: def my_function(parameter):"
                 },
                 {
                     "question_text": "What is the default return value of a function that does not explicitly return a value?",
                     "options": ["0", "None", "False", "Undefined"],
-                    "correct_option": "None"
+                    "correct_option": "None",
+                    "explanation": "In Python, if a function does not explicitly use a return statement, it automatically returns None. This is different from some other programming languages where functions might return undefined or have no return value."
                 },
                 {
                     "question_text": "Which keyword is used to return a value from a function?",
                     "options": ["return", "send", "output", "yield"],
-                    "correct_option": "return"
+                    "correct_option": "return",
+                    "explanation": "The 'return' keyword is used to exit a function and optionally pass back a value. When 'return' is encountered, the function immediately stops executing and returns the specified value."
                 },
                 {
                     "question_text": "What is the purpose of the 'global' keyword in Python?",
                     "options": ["To define a global variable", "To access a global variable inside a function", "To declare a constant", "To import a module"],
-                    "correct_option": "To access a global variable inside a function"
+                    "correct_option": "To access a global variable inside a function",
+                    "explanation": "The 'global' keyword allows a function to modify a global variable. Without it, any assignment to a variable inside a function creates a new local variable, even if a global variable with the same name exists."
                 },
                 {
                     "question_text": "Which keyword is used to define an anonymous function in Python?",
                     "options": ["anonymous", "lambda", "def", "func"],
-                    "correct_option": "lambda"
+                    "correct_option": "lambda",
+                    "explanation": "The 'lambda' keyword is used to create small, one-line anonymous functions in Python. These functions can have any number of arguments but can only have one expression. For example: square = lambda x: x**2"
                 },
                 {
                     "question_text": "What is a function that calls itself called?",
                     "options": ["Recursive function", "Anonymous function", "Lambda function", "Nested function"],
-                    "correct_option": "Recursive function"
+                    "correct_option": "Recursive function",
+                    "explanation": "A recursive function is a function that calls itself during its execution. It typically has a base case to prevent infinite recursion and breaks down complex problems into simpler, smaller problems."
                 },
                 {
                     "question_text": "Which keyword is used to define a function inside a class?",
                     "options": ["def", "method", "function", "class"],
-                    "correct_option": "def"
+                    "correct_option": "def",
+                    "explanation": "In Python, the same 'def' keyword is used to define functions both inside and outside of classes. When defined inside a class, these functions are called methods and typically take 'self' as their first parameter."
                 },
                 {
                     "question_text": "What is the term for a function inside another function?",
                     "options": ["Inner function", "Subfunction", "Recursive function", "Static function"],
-                    "correct_option": "Inner function"
+                    "correct_option": "Inner function",
+                    "explanation": "An inner function (or nested function) is a function defined inside another function. It has access to variables in the enclosing function's scope and can be used to create closures or organize code."
                 },
                 {
                     "question_text": "Which statement is used to end the execution of a function and return a value?",
                     "options": ["stop", "break", "return", "exit"],
-                    "correct_option": "return"
+                    "correct_option": "return",
+                    "explanation": "The 'return' statement is used to exit a function and optionally return a value. It immediately terminates the function's execution and passes back the specified value to the caller."
                 },
                 {
                     "question_text": "Which parameter allows a function to accept an arbitrary number of arguments?",
                     "options": ["*args", "**kwargs", "varargs", "list"],
-                    "correct_option": "*args"
+                    "correct_option": "*args",
+                    "explanation": "*args allows a function to accept any number of positional arguments. The arguments are packed into a tuple inside the function. For example: def func(*args): can be called with func(1, 2, 3) or func()"
                 }
             ]
         },
@@ -175,52 +205,62 @@
                 {
                     "question_text": "Which keyword is used to define a class in Python?",
                     "options": ["class", "struct", "object", "type"],
-                    "correct_option": "class"
+                    "correct_option": "class",
+                    "explanation": "The 'class' keyword is used to define a new class in Python. It is followed by the class name and a colon, introducing the class definition. For example: class MyClass:"
                 },
                 {
                     "question_text": "Which method is called automatically when an object is created?",
                     "options": ["__init__", "__new__", "__start__", "__create__"],
-                    "correct_option": "__init__"
+                    "correct_option": "__init__",
+                    "explanation": "The __init__ method is the constructor method in Python. It is automatically called when a new object is created and is used to initialize the object's attributes. It's similar to constructors in other object-oriented programming languages."
                 },
                 {
                     "question_text": "Which principle of OOP is used to hide implementation details?",
                     "options": ["Encapsulation", "Inheritance", "Polymorphism", "Abstraction"],
-                    "correct_option": "Encapsulation"
+                    "correct_option": "Encapsulation",
+                    "explanation": "Encapsulation is the principle of bundling data and methods that operate on that data within a single unit (class). It also involves restricting direct access to some of an object's components, typically through private and protected access modifiers."
                 },
                 {
                     "question_text": "Which function allows a class to inherit from another class?",
                     "options": ["super()", "parent()", "base()", "inherit()"],
-                    "correct_option": "super()"
+                    "correct_option": "super()",
+                    "explanation": "The super() function is used to call methods from a parent or sibling class. It's particularly useful in multiple inheritance scenarios and when overriding methods in child classes."
                 },
                 {
                     "question_text": "Which keyword is used to create a subclass?",
                     "options": ["extends", "inherits", "super", "None of the above"],
-                    "correct_option": "None of the above"
+                    "correct_option": "None of the above",
+                    "explanation": "In Python, to create a subclass, you simply define the class with the parent class in parentheses. For example: class ChildClass(ParentClass): This is different from languages like Java that use 'extends'."
                 },
                 {
                     "question_text": "Which OOP principle allows multiple functions with the same name but different implementations?",
                     "options": ["Encapsulation", "Inheritance", "Polymorphism", "Abstraction"],
-                    "correct_option": "Polymorphism"
+                    "correct_option": "Polymorphism",
+                    "explanation": "Polymorphism allows objects of different classes to be treated as objects of a common base class. It enables methods to do different things based on the object calling them, supporting method overriding and method overloading."
                 },
                 {
                     "question_text": "Which keyword is used to indicate a method should not be overridden in a subclass?",
                     "options": ["final", "static", "private", "Python does not enforce this"],
-                    "correct_option": "Python does not enforce this"
+                    "correct_option": "Python does not enforce this",
+                    "explanation": "Python does not have a built-in keyword to prevent method overriding. By convention, methods that should not be overridden can be indicated with a comment or documentation, but there's no strict language-level mechanism."
                 },
                 {
                     "question_text": "Which method is used to destroy an object in Python?",
                     "options": ["__del__", "__destroy__", "__delete__", "__remove__"],
-                    "correct_option": "__del__"
+                    "correct_option": "__del__",
+                    "explanation": "The __del__ method is a destructor method called when an object is about to be destroyed. However, due to Python's garbage collection, its use is often discouraged, and it's not guaranteed to be called immediately when an object goes out of scope."
                 },
                 {
                     "question_text": "Which decorator is used to define a class method?",
                     "options": ["@staticmethod", "@classmethod", "@property", "@method"],
-                    "correct_option": "@classmethod"
+                    "correct_option": "@classmethod",
+                    "explanation": "The @classmethod decorator is used to define a method that receives the class as its first argument instead of the instance. It can modify class state that applies across all instances of the class."
                 },
                 {
                     "question_text": "Which function is used to check if an object is an instance of a specific class?",
                     "options": ["type()", "isinstance()", "issubclass()", "check()"],
-                    "correct_option": "isinstance()"
+                    "correct_option": "isinstance()",
+                    "explanation": "The isinstance() function checks if an object is an instance of a specified class or of a subclass thereof. It returns True if the object is of the specified type, and False otherwise."
                 }
             ]
         },
@@ -231,52 +271,62 @@
                 {
                     "question_text": "Which keyword is used to handle exceptions in Python?",
                     "options": ["try", "catch", "finally", "throw"],
-                    "correct_option": "try"
+                    "correct_option": "try",
+                    "explanation": "The 'try' keyword is used to begin a block of code that might raise an exception. It is typically followed by 'except' blocks to handle specific exceptions or catch-all exceptions."
                 },
                 {
                     "question_text": "Which block is always executed in a try-except structure?",
                     "options": ["try", "except", "finally", "throw"],
-                    "correct_option": "finally"
+                    "correct_option": "finally",
+                    "explanation": "The 'finally' block is always executed, regardless of whether an exception occurred or not. It is typically used for cleanup operations like closing files or releasing resources."
                 },
                 {
                     "question_text": "Which exception is raised when dividing by zero in Python?",
                     "options": ["ZeroDivisionError", "ValueError", "ArithmeticException", "TypeError"],
-                    "correct_option": "ZeroDivisionError"
+                    "correct_option": "ZeroDivisionError",
+                    "explanation": "ZeroDivisionError is raised when attempting to divide a number by zero. This is a built-in exception in Python that prevents mathematical impossibilities."
                 },
                 {
                     "question_text": "What is the base class of all exceptions in Python?",
                     "options": ["Exception", "BaseException", "Error", "Object"],
-                    "correct_option": "BaseException"
+                    "correct_option": "BaseException",
+                    "explanation": "BaseException is the root class for all built-in exceptions in Python. Most user-defined exceptions should inherit from the Exception class, which is a subclass of BaseException."
                 },
                 {
                     "question_text": "Which statement is used to explicitly raise an exception?",
                     "options": ["raise", "throw", "error", "except"],
-                    "correct_option": "raise"
+                    "correct_option": "raise",
+                    "explanation": "The 'raise' keyword is used to trigger an exception manually. It can be used to raise built-in exceptions or custom exceptions that you've defined."
                 },
                 {
                     "question_text": "Which keyword is used to define an exception block in Python?",
                     "options": ["catch", "handle", "except", "try"],
-                    "correct_option": "except"
+                    "correct_option": "except",
+                    "explanation": "The 'except' keyword is used to catch and handle specific exceptions in a try-except block. It allows you to define how different types of exceptions should be handled."
                 },
                 {
                     "question_text": "Which exception is raised when an invalid index is accessed in a list?",
                     "options": ["IndexError", "KeyError", "ValueError", "TypeError"],
-                    "correct_option": "IndexError"
+                    "correct_option": "IndexError",
+                    "explanation": "IndexError is raised when trying to access a list index that is out of range. This occurs when you attempt to access a list element using an index that doesn't exist."
                 },
                 {
                     "question_text": "Which exception is raised when an undefined variable is accessed?",
                     "options": ["NameError", "ReferenceError", "SyntaxError", "TypeError"],
-                    "correct_option": "NameError"
+                    "correct_option": "NameError",
+                    "explanation": "NameError is raised when you try to use a variable that has not been defined or is not in the current scope. It indicates that the variable name is not recognized."
                 },
                 {
                     "question_text": "Which statement is used to handle multiple exceptions in one block?",
                     "options": ["multi", "except", "try-except", "except (Exception1, Exception2)"],
-                    "correct_option": "except (Exception1, Exception2)"
+                    "correct_option": "except (Exception1, Exception2)",
+                    "explanation": "By listing multiple exception types in parentheses, you can handle multiple types of exceptions with a single except block. This allows for more concise exception handling."
                 },
                 {
                     "question_text": "Which built-in function provides information about an exception?",
                     "options": ["info()", "traceback()", "str()", "print_exc()"],
-                    "correct_option": "print_exc()"
+                    "correct_option": "print_exc()",
+                    "explanation": "print_exc() from the traceback module prints the most recent exception's traceback. It provides detailed information about where and why an exception occurred."
                 }
             ]
         },
@@ -287,52 +337,62 @@
                 {
                     "question_text": "Which data structure stores unique elements in Python?",
                     "options": ["List", "Tuple", "Set", "Dictionary"],
-                    "correct_option": "Set"
+                    "correct_option": "Set",
+                    "explanation": "A Set is an unordered collection of unique elements. It automatically removes duplicates and is useful for eliminating repeated values and performing set operations like union and intersection."
                 },
                 {
                     "question_text": "Which collection type maintains key-value pairs?",
                     "options": ["Set", "List", "Dictionary", "Tuple"],
-                    "correct_option": "Dictionary"
+                    "correct_option": "Dictionary",
+                    "explanation": "A Dictionary stores key-value pairs, allowing fast lookup of values based on their unique keys. It is implemented using a hash table, providing efficient access and modification."
                 },
                 {
                     "question_text": "Which data structure allows duplicate values?",
                     "options": ["Set", "List", "Dictionary", "Queue"],
-                    "correct_option": "List"
+                    "correct_option": "List",
+                    "explanation": "Lists are ordered collections that can contain duplicate values. They are mutable and allow elements to be added, removed, and modified at any position."
                 },
                 {
                     "question_text": "Which method adds an element to a list?",
                     "options": ["insert()", "add()", "append()", "put()"],
-                    "correct_option": "append()"
+                    "correct_option": "append()",
+                    "explanation": "The append() method adds a single element to the end of a list. Unlike insert(), which allows specifying a position, append() always adds the element to the list's end."
                 },
                 {
                     "question_text": "Which function retrieves the number of elements in a collection?",
                     "options": ["count()", "size()", "length()", "len()"],
-                    "correct_option": "len()"
+                    "correct_option": "len()",
+                    "explanation": "The len() function returns the number of items in a collection. It works with various data structures like lists, tuples, sets, and dictionaries."
                 },
                 {
                     "question_text": "Which collection follows the Last In First Out (LIFO) principle?",
                     "options": ["Queue", "Stack", "Deque", "Set"],
-                    "correct_option": "Stack"
+                    "correct_option": "Stack",
+                    "explanation": "A Stack follows the Last In, First Out (LIFO) principle, where the last element added is the first one to be removed. In Python, you can implement a stack using a list with append() and pop() methods."
                 },
                 {
                     "question_text": "Which method removes a key-value pair from a dictionary?",
                     "options": ["delete()", "remove()", "pop()", "discard()"],
-                    "correct_option": "pop()"
+                    "correct_option": "pop()",
+                    "explanation": "The pop() method removes a specified key from a dictionary and returns its value. If the key is not found, it can return a default value or raise a KeyError."
                 },
                 {
                     "question_text": "Which function sorts a list in Python?",
                     "options": ["order()", "arrange()", "sort()", "classify()"],
-                    "correct_option": "sort()"
+                    "correct_option": "sort()",
+                    "explanation": "The sort() method sorts a list in-place, modifying the original list. For a non-modifying sort, you can use the sorted() function, which returns a new sorted list."
                 },
                 {
                     "question_text": "Which collection is best suited for fast lookups?",
                     "options": ["List", "Tuple", "Set", "Dictionary"],
-                    "correct_option": "Dictionary"
+                    "correct_option": "Dictionary",
+                    "explanation": "Dictionaries use hash tables for storage, allowing constant-time O(1) lookups by key. This makes them extremely efficient for retrieving values based on their unique keys."
                 },
                 {
                     "question_text": "Which module provides specialized container datatypes?",
                     "options": ["collections", "dataclasses", "struct", "array"],
-                    "correct_option": "collections"
+                    "correct_option": "collections",
+                    "explanation": "The collections module provides alternative data structures like OrderedDict, defaultdict, Counter, and deque, which extend the functionality of built-in container types."
                 }
             ]
         },
@@ -343,52 +403,62 @@
                 {
                     "question_text": "Which module in Python provides multithreading support?",
                     "options": ["thread", "multiprocessing", "concurrent", "threading"],
-                    "correct_option": "threading"
+                    "correct_option": "threading",
+                    "explanation": "The threading module provides a high-level interface for creating and managing threads in Python. It allows concurrent execution of different parts of a program."
                 },
                 {
                     "question_text": "Which method starts a new thread in Python?",
                     "options": ["run()", "start()", "execute()", "begin()"],
-                    "correct_option": "start()"
+                    "correct_option": "start()",
+                    "explanation": "The start() method is used to begin the execution of a thread. It calls the run() method internally and handles the thread's initialization and scheduling."
                 },
                 {
                     "question_text": "Which keyword is used to prevent race conditions in multithreading?",
                     "options": ["lock", "mutex", "synchronized", "acquire"],
-                    "correct_option": "lock"
+                    "correct_option": "lock",
+                    "explanation": "A lock (or mutex) is used to ensure that only one thread can access a critical section of code at a time, preventing race conditions and ensuring thread-safe operations."
                 },
                 {
                     "question_text": "Which function makes a thread sleep for a specified time?",
                     "options": ["wait()", "pause()", "sleep()", "halt()"],
-                    "correct_option": "sleep()"
+                    "correct_option": "sleep()",
+                    "explanation": "The sleep() function from the time module pauses the execution of a thread for a specified number of seconds, allowing other threads to run."
                 },
                 {
                     "question_text": "Which method ensures a thread completes before continuing execution?",
                     "options": ["join()", "wait()", "stop()", "terminate()"],
-                    "correct_option": "join()"
+                    "correct_option": "join()",
+                    "explanation": "The join() method blocks the calling thread until the thread being joined completes its execution. This is useful for synchronizing thread completion."
                 },
                 {
                     "question_text": "Which Python module supports parallel processing?",
                     "options": ["threading", "concurrent", "asyncio", "multiprocessing"],
-                    "correct_option": "multiprocessing"
+                    "correct_option": "multiprocessing",
+                    "explanation": "The multiprocessing module allows true parallel processing by spawning multiple processes, bypassing the Global Interpreter Lock (GIL) and enabling CPU-bound tasks to run concurrently."
                 },
                 {
                     "question_text": "Which feature helps prevent deadlocks in multithreading?",
                     "options": ["Thread priority", "Lock acquisition timeout", "Nested locks", "Blocking I/O"],
-                    "correct_option": "Lock acquisition timeout"
+                    "correct_option": "Lock acquisition timeout",
+                    "explanation": "Lock acquisition timeout prevents threads from waiting indefinitely for a lock. By setting a maximum wait time, you can avoid potential deadlock situations."
                 },
                 {
                     "question_text": "Which threading method checks if a thread is active?",
                     "options": ["is_alive()", "isRunning()", "isActive()", "isThreading()"],
-                    "correct_option": "is_alive()"
+                    "correct_option": "is_alive()",
+                    "explanation": "The is_alive() method returns a boolean indicating whether a thread is currently running or has completed its execution."
                 },
                 {
                     "question_text": "Which library provides thread pooling in Python?",
                     "options": ["threading", "multiprocessing", "concurrent.futures", "asyncio"],
-                    "correct_option": "concurrent.futures"
+                    "correct_option": "concurrent.futures",
+                    "explanation": "The concurrent.futures module provides a high-level interface for asynchronously executing callables using threads or processes, with thread pooling capabilities."
                 },
                 {
                     "question_text": "Which statement best describes Python's Global Interpreter Lock (GIL)?",
                     "options": ["Allows true parallel execution", "Prevents multiple threads from executing Python bytecode simultaneously", "Removes need for thread synchronization", "Only applies to multiprocessing module"],
-                    "correct_option": "Prevents multiple threads from executing Python bytecode simultaneously"
+                    "correct_option": "Prevents multiple threads from executing Python bytecode simultaneously",
+                    "explanation": "The Global Interpreter Lock (GIL) is a mechanism in CPython that prevents multiple native threads from executing Python bytecodes at once, which can limit the performance of CPU-bound multithreaded programs."
                 }
             ]
         },
@@ -399,57 +469,64 @@
                 {
                     "question_text": "Which Python implementation is optimized for performance?",
                     "options": ["CPython", "PyPy", "Jython", "IronPython"],
-                    "correct_option": "PyPy"
+                    "correct_option": "PyPy",
+                    "explanation": "PyPy is an alternative implementation of Python with a Just-In-Time (JIT) compiler that can significantly improve performance for long-running programs by dynamically optimizing code."
                 },
                 {
                     "question_text": "Which module is used for Just-In-Time (JIT) compilation in Python?",
                     "options": ["numba", "cython", "pypy", "jitpy"],
-                    "correct_option": "numba"
+                    "correct_option": "numba",
+                    "explanation": "Numba is a JIT compiler that can compile Python and NumPy code to native machine instructions, dramatically improving performance for numerical and scientific computing."
                 },
                 {
                     "question_text": "Which Python feature improves execution speed for repeated function calls?",
                     "options": ["Caching", "Loop unrolling", "Code injection", "Lazy evaluation"],
-                    "correct_option": "Caching"
+                    "correct_option": "Caching",
+                    "explanation": "Caching stores the results of expensive function calls and returns the cached result when the same inputs occur again, reducing redundant computations and improving performance."
                 },
                 {
                     "question_text": "Which function measures execution time in Python?",
                     "options": ["time.clock()", "timeit.timeit()", "datetime.now()", "sys.benchmark()"],
-                    "correct_option": "timeit.timeit()"
+                    "correct_option": "timeit.timeit()",
+                    "explanation": "The timeit.timeit() function provides a precise way to measure the execution time of small code snippets, allowing for accurate performance benchmarking."
                 },
                 {
                     "question_text": "Which optimization technique removes redundant computations?",
                     "options": ["Loop unrolling", "Common subexpression elimination", "Inlining", "Dead code elimination"],
-                    "correct_option": "Common subexpression elimination"
+                    "correct_option": "Common subexpression elimination",
+                    "explanation": "Common subexpression elimination is an optimization technique that identifies and eliminates redundant calculations, computing a value only once and reusing it."
                 },
                 {
                     "question_text": "Which module is commonly used for memory profiling in Python?",
                     "options": ["sys", "memory_profiler", "gc", "resource"],
-                    "correct_option": "memory_profiler"
+                    "correct_option": "memory_profiler",
+                    "explanation": "The memory_profiler module provides line-by-line memory usage analysis, helping developers identify memory-intensive parts of their code and optimize memory consumption."
                 },
                 {
                     "question_text": "Which statement best describes Python's garbage collection?",
                     "options": ["Manually managed", "Automatically managed with reference counting and cyclic garbage collector", "Only reference counting", "Only mark and sweep"],
-                    "correct_option": "Automatically managed with reference counting and cyclic garbage collector"
+                    "correct_option": "Automatically managed with reference counting and cyclic garbage collector",
+                    "explanation": "Python's garbage collection uses reference counting as its primary mechanism, supplemented by a cyclic garbage collector to handle circular references that reference counting cannot manage."
                 },
                 {
                     "question_text": "Which built-in Python tool detects performance bottlenecks?",
                     "options": ["cProfile", "memory_profiler", "timeit", "trace"],
-                    "correct_option": "cProfile"
+                    "correct_option": "cProfile",
+                    "explanation": "cProfile is a built-in profiling module that provides detailed statistics about function call frequency and execution time, helping identify performance bottlenecks in Python code."
                 },
                 {
                     "question_text": "Which data structure is best for fast lookups?",
                     "options": ["List", "Set", "Dictionary", "Tuple"],
-                    "correct_option": "Dictionary"
+                    "correct_option": "Dictionary",
+                    "explanation": "Dictionaries use hash tables for storage, providing constant-time O(1) lookups, making them the most efficient data structure for quick key-based access."
                 },
                 {
                     "question_text": "Which Python feature reduces memory fragmentation?",
                     "options": ["Garbage collection", "Memory pooling", "Heap allocation", "Stack allocation"],
-                    "correct_option": "Memory pooling"
+                    "correct_option": "Memory pooling",
+                    "explanation": "Memory pooling is a technique that pre-allocates and reuses memory blocks, reducing the overhead of frequent memory allocation and deallocation, thus minimizing memory fragmentation."
                 }
             ]
         }
     ]
 }
-
-
-

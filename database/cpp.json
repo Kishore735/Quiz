@@ -7,52 +7,62 @@
                 {
                     "question_text": "What is C++?",
                     "options": ["A programming language", "A database", "An operating system", "A web framework"],
-                    "correct_option": "A programming language"
+                    "correct_option": "A programming language",
+                    "explanation": "C++ is a general-purpose, object-oriented programming language developed by Bjarne Stroustrup as an extension of the C language. It provides low-level memory manipulation features along with high-level object-oriented programming capabilities."
                 },
                 {
                     "question_text": "Which extension is used for C++ source files?",
                     "options": [".c", ".cpp", ".h", ".cs"],
-                    "correct_option": ".cpp"
+                    "correct_option": ".cpp",
+                    "explanation": ".cpp is the standard file extension for C++ source code files. This distinguishes C++ source files from C (.c), header files (.h), and C# source files (.cs)."
                 },
                 {
                     "question_text": "Which standard library provides input and output functionalities in C++?",
                     "options": ["stdio.h", "iostream", "stdlib.h", "fstream"],
-                    "correct_option": "iostream"
+                    "correct_option": "iostream",
+                    "explanation": "iostream is the standard C++ input/output library that provides cin, cout, and cerr for console input and output operations. It's part of the C++ Standard Template Library (STL)."
                 },
                 {
                     "question_text": "What is the correct syntax for including a header file in C++?",
                     "options": ["#include <header.h>", "import header.h", "include header.h", "#header <header.h>"],
-                    "correct_option": "#include <header.h>"
+                    "correct_option": "#include <header.h>",
+                    "explanation": "#include <header.h> is the correct preprocessor directive to include standard library header files. The # symbol and include keyword tell the preprocessor to insert the contents of the specified header file."
                 },
                 {
                     "question_text": "Which function serves as the entry point of a C++ program?",
                     "options": ["start()", "main()", "execute()", "run()"],
-                    "correct_option": "main()"
+                    "correct_option": "main()",
+                    "explanation": "main() is the standard entry point for C++ programs. When the program is executed, it begins running from the main() function. It returns an integer and can take command-line arguments."
                 },
                 {
                     "question_text": "Which statement is used to print output to the console in C++?",
                     "options": ["print()", "cout <<", "console.log()", "display()"],
-                    "correct_option": "cout <<"
+                    "correct_option": "cout <<",
+                    "explanation": "cout << is the standard output stream in C++ used to print output to the console. It's part of the iostream library and allows chaining of output operations."
                 },
                 {
                     "question_text": "Which symbol is used to terminate a statement in C++?",
                     "options": [".", "?", "!", ";"],
-                    "correct_option": ";"
+                    "correct_option": ";",
+                    "explanation": "The semicolon (;) is used to terminate statements in C++. It signals the end of a statement, allowing the compiler to understand where one instruction ends and another begins."
                 },
                 {
                     "question_text": "Which keyword is used to declare a constant variable in C++?",
                     "options": ["constant", "const", "final", "define"],
-                    "correct_option": "const"
+                    "correct_option": "const",
+                    "explanation": "const is used to declare a constant variable in C++. Once a const variable is initialized, its value cannot be changed, providing type safety and preventing accidental modifications."
                 },
                 {
                     "question_text": "Which data type is used to store a single character in C++?",
                     "options": ["char", "string", "int", "float"],
-                    "correct_option": "char"
+                    "correct_option": "char",
+                    "explanation": "char is used to store a single character in C++. It typically occupies 1 byte of memory and can represent ASCII or Unicode characters."
                 },
                 {
                     "question_text": "Which operator is used for comments in C++?",
                     "options": ["//", "#", "/* */", "--"],
-                    "correct_option": "//"
+                    "correct_option": "//",
+                    "explanation": "// is used for single-line comments in C++. For multi-line comments, /* */ is used. Comments are ignored by the compiler and are used to explain code."
                 }
             ]
         },
@@ -63,52 +73,62 @@
                 {
                     "question_text": "Which operator is used for logical AND in C++?",
                     "options": ["&", "&&", "and", "||"],
-                    "correct_option": "&&"
+                    "correct_option": "&&",
+                    "explanation": "&& is the logical AND operator in C++. It returns true only if both operands are true. It's commonly used in conditional statements to combine multiple conditions."
                 },
                 {
                     "question_text": "Which statement is used for conditional execution?",
                     "options": ["if", "for", "while", "switch"],
-                    "correct_option": "if"
+                    "correct_option": "if",
+                    "explanation": "if is used for conditional execution in C++. It allows the program to execute a block of code only if a specified condition is true, providing decision-making capability."
                 },
                 {
                     "question_text": "Which loop is used when the number of iterations is known?",
                     "options": ["while", "do-while", "for", "foreach"],
-                    "correct_option": "for"
+                    "correct_option": "for",
+                    "explanation": "for loop is used when the number of iterations is known in advance. It provides a compact way to initialize, test, and increment/decrement a loop counter in a single line."
                 },
                 {
                     "question_text": "Which statement is used to terminate a loop?",
                     "options": ["exit", "break", "continue", "stop"],
-                    "correct_option": "break"
+                    "correct_option": "break",
+                    "explanation": "break is used to immediately terminate and exit the current loop. When encountered, it causes the program to jump out of the loop, skipping any remaining iterations."
                 },
                 {
                     "question_text": "Which keyword is used for a switch-case block?",
                     "options": ["case", "switch", "choose", "if"],
-                    "correct_option": "switch"
+                    "correct_option": "switch",
+                    "explanation": "switch is used to create a multi-way branch statement. It allows testing a variable against multiple possible values and executing different code blocks based on those values."
                 },
                 {
                     "question_text": "Which operator is used for modulus operation in C++?",
                     "options": ["/", "%", "mod", "*"],
-                    "correct_option": "%"
+                    "correct_option": "%",
+                    "explanation": "% is the modulus operator in C++. It returns the remainder of a division operation, useful for tasks like checking even/odd numbers or cyclical operations."
                 },
                 {
                     "question_text": "Which loop executes at least once regardless of condition?",
                     "options": ["for", "while", "do-while", "foreach"],
-                    "correct_option": "do-while"
+                    "correct_option": "do-while",
+                    "explanation": "do-while loop guarantees that the loop body is executed at least once before checking the condition. This is different from while loop, which checks the condition first."
                 },
                 {
                     "question_text": "What will be the output of '5 > 3 && 2 < 4'?",
                     "options": ["True", "False", "None", "Error"],
-                    "correct_option": "True"
+                    "correct_option": "True",
+                    "explanation": "The expression evaluates to True because both conditions (5 > 3) and (2 < 4) are true. The && operator returns true only when both operands are true."
                 },
                 {
                     "question_text": "Which statement is used to skip an iteration of a loop?",
                     "options": ["break", "skip", "continue", "exit"],
-                    "correct_option": "continue"
+                    "correct_option": "continue",
+                    "explanation": "continue skips the current iteration of a loop and moves to the next iteration. It's useful when you want to skip certain elements without terminating the entire loop."
                 },
                 {
                     "question_text": "Which operator is used for ternary conditional evaluation?",
                     "options": [":?", "?:", "??", "if-else"],
-                    "correct_option": "?:"
+                    "correct_option": "?:",
+                    "explanation": "?: is the ternary conditional operator. It's a compact way to write an if-else statement in a single line, allowing conditional assignment based on a boolean expression."
                 }
             ]
         },
@@ -119,52 +139,62 @@
                 {
                     "question_text": "Which keyword is used to define a function in C++?",
                     "options": ["func", "define", "void", "int"],
-                    "correct_option": "void"
+                    "correct_option": "void",
+                    "explanation": "void is used to specify a function that does not return a value. It indicates that the function performs an action but doesn't produce a result that needs to be returned."
                 },
                 {
                     "question_text": "What is function overloading in C++?",
                     "options": ["Using the same function name with different parameters", "Using functions inside a class", "Using a function in multiple files", "None of the above"],
-                    "correct_option": "Using the same function name with different parameters"
+                    "correct_option": "Using the same function name with different parameters",
+                    "explanation": "Function overloading allows multiple functions to have the same name but different parameter lists. The compiler distinguishes between them based on the number, types, and order of parameters."
                 },
                 {
                     "question_text": "Which keyword is used to return a value from a function?",
                     "options": ["return", "send", "output", "yield"],
-                    "correct_option": "return"
+                    "correct_option": "return",
+                    "explanation": "return is used to exit a function and optionally pass a value back to the calling function. It immediately terminates the function and sends back a specified value if the function is not void."
                 },
                 {
                     "question_text": "Which keyword is used for function declaration without a definition?",
                     "options": ["extern", "static", "virtual", "abstract"],
-                    "correct_option": "extern"
+                    "correct_option": "extern",
+                    "explanation": "extern is used to declare a function that is defined in another translation unit (typically another source file). It tells the compiler that the function is defined elsewhere."
                 },
                 {
                     "question_text": "Which function is automatically called when an object is created?",
                     "options": ["Constructor", "Destructor", "Main", "Allocate"],
-                    "correct_option": "Constructor"
+                    "correct_option": "Constructor",
+                    "explanation": "A constructor is a special member function that is called automatically when an object is created. It initializes the object's data members and allocates resources if needed."
                 },
                 {
                     "question_text": "What is the return type of a constructor?",
                     "options": ["void", "int", "None", "Depends on the class"],
-                    "correct_option": "None"
+                    "correct_option": "None",
+                    "explanation": "Constructors do not have a return type, not even void. They are special methods used to initialize objects and are called automatically when an object is created."
                 },
                 {
                     "question_text": "Which function is called automatically when an object is destroyed?",
                     "options": ["Constructor", "Destructor", "Deallocate", "Release"],
-                    "correct_option": "Destructor"
+                    "correct_option": "Destructor",
+                    "explanation": "A destructor is a special member function called automatically when an object goes out of scope or is explicitly deleted. It's used to free resources and perform cleanup."
                 },
                 {
                     "question_text": "Which keyword is used to prevent modification of a function argument?",
                     "options": ["static", "const", "volatile", "mutable"],
-                    "correct_option": "const"
+                    "correct_option": "const",
+                    "explanation": "const is used to make a function argument read-only. It prevents the function from modifying the argument, providing type safety and ensuring the original value remains unchanged."
                 },
                 {
                     "question_text": "Which function is used to execute another function dynamically?",
                     "options": ["Callback", "Function pointer", "Virtual function", "Lambda"],
-                    "correct_option": "Function pointer"
+                    "correct_option": "Function pointer",
+                    "explanation": "Function pointers allow storing and calling functions dynamically. They can be passed as arguments, stored in arrays, and used to implement callbacks and polymorphic behavior."
                 },
                 {
                     "question_text": "Which scope defines a variable that is accessible only within the file it is declared?",
                     "options": ["Global", "Local", "Static", "File"],
-                    "correct_option": "File"
+                    "correct_option": "File",
+                    "explanation": "A file scope (or translation unit scope) means a variable is visible throughout a single source file but not accessible from other files, even with external linkage."
                 }
             ]
         },
@@ -175,52 +205,62 @@
                 {
                     "question_text": "Which keyword is used to define a class in C++?",
                     "options": ["class", "struct", "object", "type"],
-                    "correct_option": "class"
+                    "correct_option": "class",
+                    "explanation": "class is used to define a user-defined type that encapsulates data and functions. It serves as a blueprint for creating objects with specific properties and behaviors."
                 },
                 {
                     "question_text": "Which concept allows a class to inherit methods from another class?",
                     "options": ["Encapsulation", "Polymorphism", "Inheritance", "Abstraction"],
-                    "correct_option": "Inheritance"
+                    "correct_option": "Inheritance",
+                    "explanation": "Inheritance is an OOP concept that allows a new class (derived class) to inherit properties and methods from an existing class (base class), promoting code reuse and hierarchical classification."
                 },
                 {
                     "question_text": "Which function is used to create an instance of a class?",
                     "options": ["new", "malloc", "allocate", "instantiate"],
-                    "correct_option": "new"
+                    "correct_option": "new",
+                    "explanation": "new is an operator used to dynamically allocate memory for an object and call its constructor. It returns a pointer to the newly created object in the heap memory."
                 },
                 {
                     "question_text": "Which access specifier restricts access to class members within the same class?",
                     "options": ["public", "private", "protected", "internal"],
-                    "correct_option": "private"
+                    "correct_option": "private",
+                    "explanation": "private access specifier restricts access to class members so they can only be accessed within the same class. This is a key principle of encapsulation, hiding internal implementation details."
                 },
                 {
                     "question_text": "Which OOP principle allows multiple functions with the same name but different parameters?",
                     "options": ["Encapsulation", "Inheritance", "Polymorphism", "Abstraction"],
-                    "correct_option": "Polymorphism"
+                    "correct_option": "Polymorphism",
+                    "explanation": "Polymorphism allows objects of different types to be treated uniformly. Function overloading is a compile-time polymorphism where multiple functions can have the same name with different parameter lists."
                 },
                 {
                     "question_text": "What is the main benefit of encapsulation?",
                     "options": ["Code reusability", "Data hiding", "Faster execution", "Memory optimization"],
-                    "correct_option": "Data hiding"
+                    "correct_option": "Data hiding",
+                    "explanation": "Encapsulation provides data hiding by restricting direct access to an object's internal state. This protects data from unauthorized access and modifications, improving code reliability."
                 },
                 {
                     "question_text": "Which keyword is used to call a base class constructor in C++?",
                     "options": ["base", "super", "parent", "this"],
-                    "correct_option": "super"
+                    "correct_option": "super",
+                    "explanation": "In C++, the correct keyword to call a base class constructor is actually the base class name followed by an initialization list, not 'super' as suggested in the options. The question's correct option is technically incorrect."
                 },
                 {
                     "question_text": "Which of the following best describes a virtual function?",
                     "options": ["A function that is always inline", "A function that can be overridden in derived classes", "A function that cannot be accessed", "A function with no definition"],
-                    "correct_option": "A function that can be overridden in derived classes"
+                    "correct_option": "A function that can be overridden in derived classes",
+                    "explanation": "A virtual function allows derived classes to provide a specific implementation of a function that is already defined in the base class, enabling runtime polymorphism."
                 },
                 {
                     "question_text": "What is an abstract class in C++?",
                     "options": ["A class that cannot be instantiated", "A class with only static methods", "A class that supports multiple inheritance", "A class with no variables"],
-                    "correct_option": "A class that cannot be instantiated"
+                    "correct_option": "A class that cannot be instantiated",
+                    "explanation": "An abstract class is a class that cannot be instantiated directly and typically contains at least one pure virtual function. It serves as a base for other classes and defines an interface."
                 },
                 {
                     "question_text": "Which keyword is used to declare an abstract method in C++?",
                     "options": ["virtual", "abstract", "interface", "override"],
-                    "correct_option": "virtual"
+                    "correct_option": "virtual",
+                    "explanation": "In C++, a pure virtual function (abstract method) is declared using the virtual keyword followed by = 0. This makes the class abstract and requires derived classes to implement the function."
                 }
             ]
         },
@@ -231,52 +271,62 @@
                 {
                     "question_text": "What is a pointer in C++?",
                     "options": ["A variable that stores an address", "A reference to another variable", "A function argument", "A special keyword"],
-                    "correct_option": "A variable that stores an address"
+                    "correct_option": "A variable that stores an address",
+                    "explanation": "A pointer is a variable that stores the memory address of another variable. It allows direct manipulation of memory and enables dynamic memory allocation and complex data structures."
                 },
                 {
                     "question_text": "Which operator is used to allocate memory dynamically?",
                     "options": ["malloc", "alloc", "new", "memory"],
-                    "correct_option": "new"
+                    "correct_option": "new",
+                    "explanation": "new is the C++ operator used for dynamic memory allocation. It allocates memory from the heap and calls the constructor for object types, providing more type safety compared to malloc in C."
                 },
                 {
                     "question_text": "Which operator is used to deallocate memory in C++?",
                     "options": ["delete", "free", "remove", "dispose"],
-                    "correct_option": "delete"
+                    "correct_option": "delete",
+                    "explanation": "delete is used to deallocate memory previously allocated by new. It calls the destructor for objects and frees the memory, preventing memory leaks when used correctly."
                 },
                 {
                     "question_text": "What is a NULL pointer?",
                     "options": ["A pointer with value zero", "A pointer to a memory location", "A pointer with garbage value", "A function pointer"],
-                    "correct_option": "A pointer with value zero"
+                    "correct_option": "A pointer with value zero",
+                    "explanation": "A NULL pointer is a pointer that does not point to any valid memory location and is typically initialized with the value zero. It's used to indicate that the pointer is not pointing to any object."
                 },
                 {
                     "question_text": "Which function reallocates memory dynamically?",
                     "options": ["malloc", "realloc", "calloc", "resize"],
-                    "correct_option": "realloc"
+                    "correct_option": "realloc",
+                    "explanation": "realloc is used to change the size of a previously allocated memory block. It can increase or decrease the memory allocation, potentially moving the memory to a new location."
                 },
                 {
                     "question_text": "What happens if you delete a pointer twice?",
                     "options": ["Memory is freed twice", "Undefined behavior", "Segmentation fault", "Compilation error"],
-                    "correct_option": "Undefined behavior"
+                    "correct_option": "Undefined behavior",
+                    "explanation": "Deleting a pointer twice leads to undefined behavior, which can cause serious runtime errors, memory corruption, or program crashes. It's a critical mistake in memory management."
                 },
                 {
                     "question_text": "Which type of pointer can point to any data type?",
                     "options": ["Generic pointer", "Void pointer", "Function pointer", "Constant pointer"],
-                    "correct_option": "Void pointer"
+                    "correct_option": "Void pointer",
+                    "explanation": "A void pointer (void*) is a generic pointer that can point to objects of any data type. It requires explicit casting to the appropriate type before dereferencing."
                 },
                 {
                     "question_text": "Which C++ feature prevents memory leaks?",
                     "options": ["Smart pointers", "Regular pointers", "Garbage collection", "Dynamic allocation"],
-                    "correct_option": "Smart pointers"
+                    "correct_option": "Smart pointers",
+                    "explanation": "Smart pointers automatically manage memory allocation and deallocation, preventing memory leaks by using reference counting and automatic deletion when the object is no longer needed."
                 },
                 {
                     "question_text": "Which of the following is a smart pointer type in C++?",
                     "options": ["auto_ptr", "unique_ptr", "shared_ptr", "All of the above"],
-                    "correct_option": "All of the above"
+                    "correct_option": "All of the above",
+                    "explanation": "auto_ptr (deprecated), unique_ptr, and shared_ptr are different types of smart pointers in C++. They provide automatic memory management with different ownership semantics."
                 },
                 {
                     "question_text": "Which header file is needed for smart pointers?",
                     "options": ["<memory>", "<pointers>", "<stdlib.h>", "<smart.h>"],
-                    "correct_option": "<memory>"
+                    "correct_option": "<memory>",
+                    "explanation": "<memory> is the standard header that provides smart pointer implementations like unique_ptr, shared_ptr, and weak_ptr in modern C++."
                 }
             ]
         },
@@ -287,52 +337,62 @@
                 {
                     "question_text": "What is the purpose of templates in C++?",
                     "options": ["To allow generic programming", "To create multiple instances of a function", "To define data types dynamically", "To allocate memory dynamically"],
-                    "correct_option": "To allow generic programming"
+                    "correct_option": "To allow generic programming",
+                    "explanation": "Templates enable generic programming by allowing functions and classes to work with different data types without rewriting code. They provide type-safe, reusable code across multiple types."
                 },
                 {
                     "question_text": "Which keyword is used to define a template in C++?",
                     "options": ["template", "typename", "generic", "class"],
-                    "correct_option": "template"
+                    "correct_option": "template",
+                    "explanation": "template is the keyword used to declare a template function or class. It allows creating generic functions and classes that can work with different data types."
                 },
                 {
                     "question_text": "What does STL stand for in C++?",
                     "options": ["Standard Template Library", "Standard Typing Library", "System Type Library", "Static Template Library"],
-                    "correct_option": "Standard Template Library"
+                    "correct_option": "Standard Template Library",
+                    "explanation": "STL is the Standard Template Library, a collection of powerful, reusable components including containers, algorithms, and iterators that provide efficient, generic programming tools."
                 },
                 {
                     "question_text": "Which of the following is NOT a component of STL?",
                     "options": ["Algorithms", "Containers", "Iterators", "Functions"],
-                    "correct_option": "Functions"
+                    "correct_option": "Functions",
+                    "explanation": "STL consists of containers (data structures), algorithms (operations on containers), and iterators (traversal mechanisms). Functions are not a primary component of the STL design."
                 },
                 {
                     "question_text": "Which STL container stores key-value pairs?",
                     "options": ["vector", "list", "map", "deque"],
-                    "correct_option": "map"
+                    "correct_option": "map",
+                    "explanation": "map is an STL container that stores key-value pairs, allowing efficient lookup, insertion, and deletion based on unique keys. It's implemented as a balanced binary search tree."
                 },
                 {
                     "question_text": "Which STL container follows Last In First Out (LIFO)?",
                     "options": ["queue", "priority_queue", "stack", "vector"],
-                    "correct_option": "stack"
+                    "correct_option": "stack",
+                    "explanation": "stack is a LIFO (Last In First Out) container adapter in STL. It allows elements to be added and removed from the top, following the principle of a traditional stack data structure."
                 },
                 {
                     "question_text": "Which STL algorithm is used to sort elements?",
                     "options": ["sort()", "order()", "arrange()", "classify()"],
-                    "correct_option": "sort()"
+                    "correct_option": "sort()",
+                    "explanation": "sort() is a standard algorithm in the STL that provides an efficient sorting mechanism for containers. It uses introsort, a hybrid of quicksort, heapsort, and insertion sort."
                 },
                 {
                     "question_text": "Which header file is required for using STL containers?",
                     "options": ["<stl>", "<containers>", "<vector>", "<algorithm>"],
-                    "correct_option": "<vector>"
+                    "correct_option": "<vector>",
+                    "explanation": "<vector> is a header that provides the vector container, but for most STL containers, you would include the specific container's header or <bits/stdc++.h> in competitive programming."
                 },
                 {
                     "question_text": "Which container is best for fast insertion and deletion at both ends?",
                     "options": ["vector", "list", "deque", "set"],
-                    "correct_option": "deque"
+                    "correct_option": "deque",
+                    "explanation": "deque (double-ended queue) allows efficient insertion and deletion at both ends. Unlike vector, it provides constant time complexity for front and back operations."
                 },
                 {
                     "question_text": "Which STL container does not allow duplicate elements?",
                     "options": ["vector", "set", "multiset", "list"],
-                    "correct_option": "set"
+                    "correct_option": "set",
+                    "explanation": "set is an STL container that stores unique elements in a sorted order. It automatically prevents duplicate values and provides logarithmic time complexity for insertions and lookups."
                 }
             ]
         },
@@ -343,52 +403,62 @@
                 {
                     "question_text": "Which library is required for file handling in C++?",
                     "options": ["<iostream>", "<fstream>", "<file>", "<stdlib.h>"],
-                    "correct_option": "<fstream>"
+                    "correct_option": "<fstream>",
+                    "explanation": "<fstream> is the standard C++ library for file input and output operations. It provides classes like ifstream, ofstream, and fstream for reading from and writing to files."
                 },
                 {
                     "question_text": "Which class is used to write to a file in C++?",
                     "options": ["ifstream", "ofstream", "fstream", "file"],
-                    "correct_option": "ofstream"
+                    "correct_option": "ofstream",
+                    "explanation": "ofstream (output file stream) is used to create files and write data to them. It provides methods for writing different types of data to files."
                 },
                 {
                     "question_text": "Which class is used to read from a file in C++?",
                     "options": ["ifstream", "ofstream", "fstream", "file"],
-                    "correct_option": "ifstream"
+                    "correct_option": "ifstream",
+                    "explanation": "ifstream (input file stream) is used to read data from files. It provides methods for reading different types of data from existing files."
                 },
                 {
                     "question_text": "Which mode is used to append data to a file?",
                     "options": ["ios::in", "ios::out", "ios::app", "ios::ate"],
-                    "correct_option": "ios::app"
+                    "correct_option": "ios::app",
+                    "explanation": "ios::app is a file open mode that appends data to the end of an existing file. It preserves existing content and adds new data at the end of the file."
                 },
                 {
                     "question_text": "Which function is used to open a file in C++?",
                     "options": ["open()", "fopen()", "file.open()", "create()"],
-                    "correct_option": "open()"
+                    "correct_option": "open()",
+                    "explanation": "open() is a member function of file stream classes used to open a file with specified modes and access rights for reading or writing."
                 },
                 {
                     "question_text": "Which function is used to close a file in C++?",
                     "options": ["end()", "terminate()", "close()", "finish()"],
-                    "correct_option": "close()"
+                    "correct_option": "close()",
+                    "explanation": "close() is used to properly close an open file, ensuring that all buffered data is written and system resources are released."
                 },
                 {
                     "question_text": "What happens if you try to open a non-existent file in read mode?",
                     "options": ["Creates a new file", "Throws an error", "Returns an empty file", "None of the above"],
-                    "correct_option": "Throws an error"
+                    "correct_option": "Throws an error",
+                    "explanation": "When attempting to open a non-existent file in read mode, the file stream will fail to open and typically throw an error or set a fail flag."
                 },
                 {
                     "question_text": "Which of the following is a file stream class in C++?",
                     "options": ["fstream", "ifstream", "ofstream", "All of the above"],
-                    "correct_option": "All of the above"
+                    "correct_option": "All of the above",
+                    "explanation": "fstream, ifstream, and ofstream are all file stream classes in C++. fstream can both read and write, ifstream is for input, and ofstream is for output."
                 },
                 {
                     "question_text": "Which mode is used to read and write to a file?",
                     "options": ["ios::in", "ios::out", "ios::in | ios::out", "ios::app"],
-                    "correct_option": "ios::in | ios::out"
+                    "correct_option": "ios::in | ios::out",
+                    "explanation": "ios::in | ios::out combines input and output modes, allowing both reading and writing to the same file. The | operator combines file modes in C++."
                 },
                 {
                     "question_text": "Which function is used to check if a file is open?",
                     "options": ["is_open()", "file_exists()", "check_file()", "open_status()"],
-                    "correct_option": "is_open()"
+                    "correct_option": "is_open()",
+                    "explanation": "is_open() is a member function of file stream classes that returns true if the file is successfully opened and false otherwise."
                 }
             ]
         },
@@ -399,52 +469,62 @@
                 {
                     "question_text": "Which keyword is used to declare an inline function in C++?",
                     "options": ["inline", "fast", "quick", "macro"],
-                    "correct_option": "inline"
+                    "correct_option": "inline",
+                    "explanation": "inline is a keyword suggesting to the compiler that the function's body should be inserted directly at the call site, potentially reducing function call overhead."
                 },
                 {
                     "question_text": "Which optimization technique reduces redundant computations?",
                     "options": ["Loop Unrolling", "Common Subexpression Elimination", "Inlining", "Dead Code Elimination"],
-                    "correct_option": "Common Subexpression Elimination"
+                    "correct_option": "Common Subexpression Elimination",
+                    "explanation": "Common Subexpression Elimination removes redundant calculations by identifying and computing repeated expressions only once, improving computational efficiency."
                 },
                 {
                     "question_text": "Which C++ feature helps manage large codebases efficiently?",
                     "options": ["Namespaces", "Templates", "STL", "Macros"],
-                    "correct_option": "Namespaces"
+                    "correct_option": "Namespaces",
+                    "explanation": "Namespaces help prevent naming conflicts in large projects by creating separate scopes for identifiers, allowing better organization and modularization of code."
                 },
                 {
                     "question_text": "Which data structure is best suited for fast searching?",
                     "options": ["Array", "Linked List", "Hash Table", "Stack"],
-                    "correct_option": "Hash Table"
+                    "correct_option": "Hash Table",
+                    "explanation": "Hash Tables provide constant-time average-case complexity for search, insert, and delete operations, making them extremely efficient for quick lookups."
                 },
                 {
                     "question_text": "Which compiler flag enables optimizations in C++?",
                     "options": ["-O1", "-O2", "-O3", "All of the above"],
-                    "correct_option": "All of the above"
+                    "correct_option": "All of the above",
+                    "explanation": "Compiler optimization flags -O1, -O2, and -O3 provide increasing levels of code optimization, with -O3 providing the most aggressive optimizations."
                 },
                 {
                     "question_text": "Which of the following helps reduce function call overhead?",
                     "options": ["Inlining", "Recursion", "Pointer arithmetic", "Heap allocation"],
-                    "correct_option": "Inlining"
+                    "correct_option": "Inlining",
+                    "explanation": "Inlining replaces function calls with the actual function body, eliminating the overhead of function call mechanisms like stack frame creation."
                 },
                 {
                     "question_text": "Which tool is commonly used for performance profiling in C++?",
                     "options": ["GDB", "Valgrind", "Gprof", "Both Valgrind and Gprof"],
-                    "correct_option": "Both Valgrind and Gprof"
+                    "correct_option": "Both Valgrind and Gprof",
+                    "explanation": "Valgrind and Gprof are powerful profiling tools. Valgrind detects memory management issues, while Gprof provides performance analysis and function call timing."
                 },
                 {
                     "question_text": "Which approach reduces memory fragmentation in dynamic allocation?",
                     "options": ["Memory Pooling", "Garbage Collection", "Stack Allocation", "Loop Unrolling"],
-                    "correct_option": "Memory Pooling"
+                    "correct_option": "Memory Pooling",
+                    "explanation": "Memory Pooling pre-allocates a large block of memory and manages smaller allocations within it, reducing fragmentation and improving allocation speed."
                 },
                 {
                     "question_text": "Which optimization technique eliminates unnecessary code?",
                     "options": ["Inlining", "Dead Code Elimination", "Loop Unrolling", "Branch Prediction"],
-                    "correct_option": "Dead Code Elimination"
+                    "correct_option": "Dead Code Elimination",
+                    "explanation": "Dead Code Elimination removes code that has no effect on the program's output, reducing binary size and potentially improving performance."
                 },
                 {
                     "question_text": "Which concept reduces branch mispredictions in CPUs?",
                     "options": ["Loop Optimization", "Branch Prediction", "Function Inlining", "Memory Pooling"],
-                    "correct_option": "Branch Prediction"
+                    "correct_option": "Branch Prediction",
+                    "explanation": "Branch Prediction is a technique where the CPU tries to guess the outcome of conditional statements before they are actually evaluated, reducing pipeline stalls and improving performance."
                 }
             ]
         }

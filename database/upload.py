@@ -4,7 +4,7 @@ import json
 import os
 
 # Load Firebase credentials
-cred = credentials.Certificate(r"D:\code\Workspace\Intel\intel-de8f5-firebase-adminsdk-fbsvc-886d69c708.json")  # Replace with your Firebase service account file
+cred = credentials.Certificate(r"D:\code\Workspace\Intel\Intel_Unnati\intel-de8f5-firebase-adminsdk-fbsvc-886d69c708.json")  # Replace with your Firebase service account file
 firebase_admin.initialize_app(cred)
 
 # Firestore DB reference
@@ -12,10 +12,10 @@ db = firestore.client()
 
 # List of quiz JSON files (Update paths if needed)
 quiz_files = {
-    "python": "python.json",
-    "c": "c.json",
-    "cpp": "cpp.json",
-    "java": "java.json"
+    "python": "D:\code\Workspace\Intel\Intel_Unnati\database\python.json",
+    "c": "D:\code\Workspace\Intel\Intel_Unnati\database\c.json",
+    "cpp": "D:\code\Workspace\Intel\Intel_Unnati\database\cpp.json",
+    "java": "D:\code\Workspace\Intel\Intel_Unnati\database\java.json"
 }
 
 # Programming language descriptions

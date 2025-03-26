@@ -21,6 +21,20 @@ document.addEventListener('DOMContentLoaded', () => {
     let questionStartTimes = [];
     let questionTimeTaken = [];
 
+    // Explanation Container
+    const createExplanationContainer = () => {
+        const existingExplanation = document.getElementById('explanation-container');
+        if (existingExplanation) {
+            existingExplanation.remove();
+        }
+
+        const explanationContainer = document.createElement('div');
+        explanationContainer.id = 'explanation-container';
+        explanationContainer.classList.add('explanation-container');
+        questionContainer.appendChild(explanationContainer);
+        return explanationContainer;
+    };
+
     // Retrieve parameters from sessionStorage
     selectedLanguage = sessionStorage.getItem('selectedLanguageId');
     selectedModule = sessionStorage.getItem('selectedModuleId');
@@ -72,7 +86,6 @@ document.addEventListener('DOMContentLoaded', () => {
             displayQuestion();
             
             // Setup submit button
-            // In the fetchRandomQuestions function, modify the submit button setup:
             submitBtn.classList.remove('hidden');
             submitBtn.disabled = true;
             submitBtn.addEventListener('click', () => {
@@ -80,11 +93,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     showResults();
                 }
             });
-
-            // In the selectOption function, update the submit button logic:
-            if (currentQuestionIndex === currentQuestions.length - 1) {
-                submitBtn.disabled = false;
-            }
 
         } catch (error) {
             console.error('Error fetching questions:', error);
@@ -105,6 +113,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Display Current Question
     function displayQuestion() {
+        // Remove any previous explanation
+        const existingExplanation = document.getElementById('explanation-container');
+        if (existingExplanation) {
+            existingExplanation.remove();
+        }
+
         if (currentQuestionIndex < currentQuestions.length) {
             const currentQuestion = currentQuestions[currentQuestionIndex];
             
@@ -151,6 +165,13 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             if (btn.textContent === selectedOption && selectedOption !== currentQuestion.correct_option) {
                 btn.classList.add('incorrect');
+                
+                // Create and show explanation
+                const explanationContainer = createExplanationContainer();
+                explanationContainer.innerHTML = `
+                    <h3>Explanation</h3>
+                    <p>${currentQuestion.explanation || 'No explanation available.'}</p>
+                `;
             }
         });
 
@@ -168,7 +189,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Enable submit when all questions are answered
                 submitBtn.disabled = false;
             }
-        }, 1000);
+        }, 5000); // Increased timeout to 3 seconds to allow reading explanation
     }
 
     // Show Quiz Results
@@ -241,14 +262,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 datasets: [{
                     label: 'Time (sec)',
                     data: questionTimeTaken.map(time => (time / 1000).toFixed(2)),
-                    backgroundColor: 'rgba(41, 128, 185, 0.6)', // Softer blue
+                    backgroundColor: 'rgba(41, 128, 185, 0.6)',
                     borderColor: 'rgba(41, 128, 185, 1)',
                     borderWidth: 1
                 }]
             },
             options: {
                 responsive: true,
-                maintainAspectRatio: true,
+                maintainAspectRatio: false,
                 scales: {
                     y: {
                         beginAtZero: true,
@@ -269,7 +290,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }
         });
-
+    
         // Performance Pie Chart
         const performanceCtx = document.getElementById('performance-chart').getContext('2d');
         new Chart(performanceCtx, {
@@ -278,13 +299,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 labels: ['Correct', 'Incorrect'],
                 datasets: [{
                     data: [score, currentQuestions.length - score],
-                    backgroundColor: ['#2ecc71', '#e74c3c'], // Green for correct, red for incorrect
+                    backgroundColor: ['#2ecc71', '#e74c3c'],
                     borderWidth: 1
                 }]
             },
             options: {
                 responsive: true,
-                maintainAspectRatio: true,
+                maintainAspectRatio: false,
                 plugins: {
                     title: {
                         display: true,

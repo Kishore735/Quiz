@@ -7,52 +7,62 @@
                 {
                     "question_text": "What is C?",
                     "options": ["A programming language", "A database", "An operating system", "A text editor"],
-                    "correct_option": "A programming language"
+                    "correct_option": "A programming language",
+                    "explanation": "C is a general-purpose, procedural computer programming language developed in 1972 by Dennis Ritchie at Bell Labs. It is one of the most widely used programming languages and forms the basis for many other languages."
                 },
                 {
                     "question_text": "Which symbol is used to end a statement in C?",
                     "options": [".", ",", ";", ":"],
-                    "correct_option": ";"
+                    "correct_option": ";",
+                    "explanation": "In C, the semicolon (;) is used to terminate a statement. It signals the end of a complete instruction to the compiler, similar to a period in a sentence."
                 },
                 {
                     "question_text": "Which function is used to display output in C?",
                     "options": ["print()", "printf()", "echo()", "disp()"],
-                    "correct_option": "printf()"
+                    "correct_option": "printf()",
+                    "explanation": "printf() is a standard library function in C used for formatted output. It is part of the <stdio.h> header and allows printing text, variables, and formatted strings to the console."
                 },
                 {
                     "question_text": "Which data type is used to store a single character?",
                     "options": ["char", "string", "int", "float"],
-                    "correct_option": "char"
+                    "correct_option": "char",
+                    "explanation": "The 'char' data type in C is used to store a single character. It typically occupies 1 byte of memory and can represent ASCII characters."
                 },
                 {
                     "question_text": "What is the correct format specifier for integers?",
                     "options": ["%d", "%c", "%f", "%s"],
-                    "correct_option": "%d"
+                    "correct_option": "%d",
+                    "explanation": "%d is the format specifier used with printf() and scanf() to represent integers. It tells the function to expect or print an integer value."
                 },
                 {
                     "question_text": "Which of the following is a valid variable name in C?",
                     "options": ["2var", "_var", "my-var", "int"],
-                    "correct_option": "_var"
+                    "correct_option": "_var",
+                    "explanation": "In C, variable names can start with an underscore or a letter. '_var' is valid because it starts with an underscore. Variable names cannot start with a number or contain hyphens."
                 },
                 {
                     "question_text": "Which header file is required for input/output functions?",
                     "options": ["stdio.h", "stdlib.h", "conio.h", "math.h"],
-                    "correct_option": "stdio.h"
+                    "correct_option": "stdio.h",
+                    "explanation": "stdio.h (standard input/output header) is the header file that provides functions like printf(), scanf(), and other input/output operations in C."
                 },
                 {
                     "question_text": "Which function is used to take input in C?",
                     "options": ["input()", "scan()", "scanf()", "get()"],
-                    "correct_option": "scanf()"
+                    "correct_option": "scanf()",
+                    "explanation": "scanf() is the standard library function used to read input from the console. It can read different types of data based on format specifiers."
                 },
                 {
                     "question_text": "What is the default return type of main() function in C?",
                     "options": ["void", "int", "float", "char"],
-                    "correct_option": "int"
+                    "correct_option": "int",
+                    "explanation": "The main() function in C typically returns an integer value. By convention, returning 0 indicates successful program execution, while non-zero values indicate errors."
                 },
                 {
                     "question_text": "Which keyword is used to define a constant value?",
                     "options": ["define", "const", "final", "constant"],
-                    "correct_option": "const"
+                    "correct_option": "const",
+                    "explanation": "The 'const' keyword in C is used to declare a constant value that cannot be modified after initialization, preventing accidental changes to the variable."
                 }
             ]
         },
@@ -63,52 +73,62 @@
                 {
                     "question_text": "Which statement is used for conditional execution?",
                     "options": ["for", "while", "if", "switch"],
-                    "correct_option": "if"
+                    "correct_option": "if",
+                    "explanation": "The 'if' statement is used for conditional execution in C. It allows the program to execute a block of code only if a specified condition is true."
                 },
                 {
                     "question_text": "Which loop is used when the number of iterations is known?",
                     "options": ["while", "do-while", "for", "switch"],
-                    "correct_option": "for"
+                    "correct_option": "for",
+                    "explanation": "The 'for' loop is ideal when the number of iterations is known beforehand. It provides a compact way to initialize, test, and increment/decrement a loop variable."
                 },
                 {
                     "question_text": "Which statement is used to terminate a loop?",
                     "options": ["exit", "break", "stop", "end"],
-                    "correct_option": "break"
+                    "correct_option": "break",
+                    "explanation": "The 'break' statement is used to immediately exit or terminate a loop (for, while, do-while) or switch statement, transferring control to the next statement after the loop."
                 },
                 {
                     "question_text": "Which loop always executes at least once?",
                     "options": ["for", "while", "do-while", "if"],
-                    "correct_option": "do-while"
+                    "correct_option": "do-while",
+                    "explanation": "In a do-while loop, the loop body is executed first, and then the condition is checked. This guarantees that the loop body will run at least once before checking the condition."
                 },
                 {
                     "question_text": "Which statement is used to skip an iteration in a loop?",
                     "options": ["skip", "continue", "break", "jump"],
-                    "correct_option": "continue"
+                    "correct_option": "continue",
+                    "explanation": "The 'continue' statement skips the rest of the current iteration and moves to the next iteration of the loop, without terminating the entire loop."
                 },
                 {
                     "question_text": "Which keyword is used in switch-case?",
                     "options": ["when", "choose", "switch", "select"],
-                    "correct_option": "switch"
+                    "correct_option": "switch",
+                    "explanation": "The 'switch' statement is used to execute different code blocks based on different conditions. It provides a way to test a variable against multiple possible values."
                 },
                 {
                     "question_text": "Which logical operator represents AND?",
                     "options": ["&", "&&", "and", "|"],
-                    "correct_option": "&&"
+                    "correct_option": "&&",
+                    "explanation": "The '&&' operator is the logical AND operator in C. It returns true only if both operands are true, otherwise it returns false."
                 },
                 {
                     "question_text": "Which logical operator represents OR?",
                     "options": ["&", "|", "||", "or"],
-                    "correct_option": "||"
+                    "correct_option": "||",
+                    "explanation": "The '||' operator is the logical OR operator in C. It returns true if at least one of the operands is true, otherwise it returns false."
                 },
                 {
                     "question_text": "What will be the output of '5 > 3 && 2 < 4'?",
                     "options": ["True", "False", "None", "Error"],
-                    "correct_option": "True"
+                    "correct_option": "True",
+                    "explanation": "This expression combines two conditions: '5 > 3' (true) and '2 < 4' (true). Since both conditions are true, the && operator returns true."
                 },
                 {
                     "question_text": "What is the result of '5 > 3 || 2 > 4'?",
                     "options": ["True", "False", "None", "Error"],
-                    "correct_option": "True"
+                    "correct_option": "True",
+                    "explanation": "This expression uses the OR operator. '5 > 3' is true, so even though '2 > 4' is false, the entire expression evaluates to true."
                 }
             ]
         },
@@ -119,52 +139,62 @@
                 {
                     "question_text": "Which keyword is used to define a function in C?",
                     "options": ["func", "def", "void", "int"],
-                    "correct_option": "void"
+                    "correct_option": "void",
+                    "explanation": "The 'void' keyword is used to define a function that does not return a value. It indicates that the function performs an action but doesn't produce a result to be returned."
                 },
                 {
                     "question_text": "What is the default return type of a function in C?",
                     "options": ["void", "int", "float", "char"],
-                    "correct_option": "int"
+                    "correct_option": "int",
+                    "explanation": "In C, if no return type is specified, the default return type is 'int'. This is why main() functions typically return an integer status code (0 for success, non-zero for errors)."
                 },
                 {
                     "question_text": "Which keyword is used to return a value from a function?",
                     "options": ["return", "send", "output", "yield"],
-                    "correct_option": "return"
+                    "correct_option": "return",
+                    "explanation": "The 'return' keyword is used to exit a function and optionally pass a value back to the calling function. It immediately terminates the function execution and returns control to the caller."
                 },
                 {
                     "question_text": "What is function overloading in C?",
                     "options": ["Defining multiple functions with the same name but different parameters", "Using a function inside another function", "Returning multiple values from a function", "None of the above"],
-                    "correct_option": "None of the above"
+                    "correct_option": "None of the above",
+                    "explanation": "C does not support function overloading. Unlike languages like C++, in C you cannot define multiple functions with the same name but different parameter types or numbers."
                 },
                 {
                     "question_text": "Which storage class is used to keep a variable value even after a function exits?",
                     "options": ["auto", "register", "static", "extern"],
-                    "correct_option": "static"
+                    "correct_option": "static",
+                    "explanation": "The 'static' keyword for local variables means the variable retains its value between function calls. It's initialized only once and preserves its value across multiple function invocations."
                 },
                 {
                     "question_text": "Which function is called automatically when a program starts execution?",
                     "options": ["start()", "main()", "execute()", "run()"],
-                    "correct_option": "main()"
+                    "correct_option": "main()",
+                    "explanation": "The main() function is the entry point of a C program. It is automatically called when the program begins execution and serves as the starting point for program logic."
                 },
                 {
                     "question_text": "What is the scope of a variable declared inside a function?",
                     "options": ["Global", "Local", "Static", "External"],
-                    "correct_option": "Local"
+                    "correct_option": "Local",
+                    "explanation": "A variable declared inside a function has local scope, meaning it is only accessible within that function and ceases to exist once the function completes execution."
                 },
                 {
                     "question_text": "Which keyword is used to declare an external function in another file?",
                     "options": ["static", "extern", "global", "volatile"],
-                    "correct_option": "extern"
+                    "correct_option": "extern",
+                    "explanation": "The 'extern' keyword is used to declare a function that is defined in another source file, allowing the current file to use that function without fully defining it."
                 },
                 {
                     "question_text": "Which type of function does not return a value?",
                     "options": ["void function", "int function", "char function", "float function"],
-                    "correct_option": "void function"
+                    "correct_option": "void function",
+                    "explanation": "A void function is a function that does not return any value. It performs actions but does not provide a return value back to the calling function."
                 },
                 {
                     "question_text": "Which of the following is a correct function prototype?",
                     "options": ["int sum(int, int);", "sum(int a, int b);", "int sum(a, b);", "void sum(int a, b);"],
-                    "correct_option": "int sum(int, int);"
+                    "correct_option": "int sum(int, int);",
+                    "explanation": "A correct function prototype specifies the return type, function name, and parameter types. The example shows an integer return type, function name 'sum', and two integer parameters."
                 }
             ]
         },
@@ -175,52 +205,62 @@
                 {
                     "question_text": "Which data type is used to store a sequence of characters in C?",
                     "options": ["char", "string", "char array", "text"],
-                    "correct_option": "char array"
+                    "correct_option": "char array",
+                    "explanation": "In C, strings are represented as character arrays. Unlike some high-level languages, C does not have a built-in string type, so character arrays are used to store strings."
                 },
                 {
                     "question_text": "What is the index of the first element in a C array?",
                     "options": ["0", "1", "-1", "Depends on compiler"],
-                    "correct_option": "0"
+                    "correct_option": "0",
+                    "explanation": "In C, array indexing always starts at 0. The first element of an array is accessed using index 0, the second with index 1, and so on."
                 },
                 {
                     "question_text": "Which function is used to copy one string to another?",
                     "options": ["strcpy()", "copy()", "stringcpy()", "copystr()"],
-                    "correct_option": "strcpy()"
+                    "correct_option": "strcpy()",
+                    "explanation": "strcpy() is a standard library function in C used to copy the contents of one string to another. It is defined in the <string.h> header."
                 },
                 {
                     "question_text": "How do you declare a one-dimensional integer array in C?",
                     "options": ["int arr[];", "int arr[10];", "array int arr;", "int array[10];"],
-                    "correct_option": "int arr[10];"
+                    "correct_option": "int arr[10];",
+                    "explanation": "This is the correct syntax for declaring a one-dimensional integer array in C. It specifies the data type (int), array name (arr), and size (10) within square brackets."
                 },
                 {
                     "question_text": "Which function is used to concatenate two strings?",
                     "options": ["strcat()", "concat()", "stringcat()", "joinstr()"],
-                    "correct_option": "strcat()"
+                    "correct_option": "strcat()",
+                    "explanation": "strcat() is the standard library function used to concatenate (join) two strings. It appends the second string to the end of the first string."
                 },
                 {
                     "question_text": "Which of the following correctly accesses an element in an array?",
                     "options": ["arr(2)", "arr[2]", "arr{2}", "arr<2>"],
-                    "correct_option": "arr[2]"
+                    "correct_option": "arr[2]",
+                    "explanation": "In C, square brackets [] are used to access array elements. arr[2] accesses the third element of the array (remember, indexing starts at 0)."
                 },
                 {
                     "question_text": "What happens if you access an array out of its bound?",
                     "options": ["Compilation error", "Runtime error", "Garbage value", "None of the above"],
-                    "correct_option": "Garbage value"
+                    "correct_option": "Garbage value",
+                    "explanation": "Accessing an array out of its bounds leads to undefined behavior. This can result in reading or writing to unintended memory locations, potentially causing unpredictable results."
                 },
                 {
                     "question_text": "Which function is used to find the length of a string?",
                     "options": ["length()", "strlen()", "size()", "strlength()"],
-                    "correct_option": "strlen()"
+                    "correct_option": "strlen()",
+                    "explanation": "strlen() is the standard library function used to calculate the length of a string. It returns the number of characters in a string, not including the null terminator."
                 },
                 {
                     "question_text": "What is the last character in every C string?",
                     "options": ["NULL ()", "Space (' ')", "Newline ('\n')", "Endline ('\r')"],
-                    "correct_option": "NULL ()"
+                    "correct_option": "NULL ()",
+                    "explanation": "Every C string is terminated by a null character (represented as '0'), which indicates the end of the string. This is crucial for string handling functions."
                 },
                 {
                     "question_text": "Which function is used to compare two strings?",
                     "options": ["strcmp()", "compare()", "strcompare()", "cmpstr()"],
-                    "correct_option": "strcmp()"
+                    "correct_option": "strcmp()",
+                    "explanation": "strcmp() is the standard library function used to compare two strings. It returns 0 if the strings are equal, a negative value if the first string is lexicographically less, and a positive value if the first string is lexicographically greater."
                 }
             ]
         },
@@ -231,52 +271,62 @@
                 {
                     "question_text": "What is a pointer in C?",
                     "options": ["A variable that stores an address", "A reference to another variable", "A function argument", "A special keyword"],
-                    "correct_option": "A variable that stores an address"
+                    "correct_option": "A variable that stores an address",
+                    "explanation": "A pointer is a variable that stores the memory address of another variable. It allows direct manipulation of memory and is crucial for dynamic memory management."
                 },
                 {
                     "question_text": "Which operator is used to access the address of a variable?",
                     "options": ["*", "&", "->", "%"],
-                    "correct_option": "&"
+                    "correct_option": "&",
+                    "explanation": "The '&' operator is used to get the memory address of a variable. For example, &x returns the memory address where the variable x is stored."
                 },
                 {
                     "question_text": "Which function is used for dynamic memory allocation?",
                     "options": ["malloc()", "alloc()", "new()", "memalloc()"],
-                    "correct_option": "malloc()"
+                    "correct_option": "malloc()",
+                    "explanation": "malloc() is the standard library function used for dynamic memory allocation. It allocates a specified number of bytes and returns a void pointer to the allocated memory."
                 },
                 {
                     "question_text": "What is the return type of malloc()?",
                     "options": ["void*", "int", "char*", "float*"],
-                    "correct_option": "void*"
+                    "correct_option": "void*",
+                    "explanation": "malloc() returns a void pointer (void*), which can be cast to any pointer type. This allows flexibility in allocating memory for different data types."
                 },
                 {
                     "question_text": "Which function is used to free dynamically allocated memory?",
                     "options": ["delete", "free()", "remove()", "release()"],
-                    "correct_option": "free()"
+                    "correct_option": "free()",
+                    "explanation": "free() is used to deallocate memory that was previously allocated by malloc(), calloc(), or realloc(). It prevents memory leaks by returning the memory to the system."
                 },
                 {
                     "question_text": "What does the NULL pointer represent?",
                     "options": ["An uninitialized pointer", "A pointer with address 0", "A memory leak", "A corrupted pointer"],
-                    "correct_option": "A pointer with address 0"
+                    "correct_option": "A pointer with address 0",
+                    "explanation": "NULL is a special pointer value representing a pointer that does not point to any valid memory location. It is often used to indicate the absence of a valid address."
                 },
                 {
                     "question_text": "Which function reallocates memory dynamically?",
                     "options": ["malloc()", "realloc()", "calloc()", "memresize()"],
-                    "correct_option": "realloc()"
+                    "correct_option": "realloc()",
+                    "explanation": "realloc() is used to change the size of previously allocated memory. It can either increase or decrease the memory block's size while preserving existing data."
                 },
                 {
                     "question_text": "Which function initializes allocated memory to zero?",
                     "options": ["malloc()", "calloc()", "memset()", "init()"],
-                    "correct_option": "calloc()"
+                    "correct_option": "calloc()",
+                    "explanation": "calloc() allocates memory and initializes all bytes to zero. Unlike malloc(), it takes two arguments: number of elements and size of each element."
                 },
                 {
                     "question_text": "Which symbol is used to dereference a pointer?",
                     "options": ["*", "&", "->", "#"],
-                    "correct_option": "*"
+                    "correct_option": "*",
+                    "explanation": "The '*' operator is used to dereference a pointer, accessing the value stored at the memory address the pointer points to."
                 },
                 {
                     "question_text": "What happens if you free a pointer twice?",
                     "options": ["Memory is released twice", "Undefined behavior", "Compiler error", "Segmentation fault"],
-                    "correct_option": "Undefined behavior"
+                    "correct_option": "Undefined behavior",
+                    "explanation": "Freeing a pointer more than once leads to undefined behavior, which can cause serious program errors, memory corruption, or unexpected program termination."
                 }
             ]
         },
@@ -287,52 +337,62 @@
                 {
                     "question_text": "Which keyword is used to define a structure in C?",
                     "options": ["struct", "class", "union", "record"],
-                    "correct_option": "struct"
+                    "correct_option": "struct",
+                    "explanation": "The 'struct' keyword is used to define a user-defined data type that can contain multiple variables of different types under a single name."
                 },
                 {
                     "question_text": "Which keyword is used to define a union in C?",
                     "options": ["struct", "union", "class", "shared"],
-                    "correct_option": "union"
+                    "correct_option": "union",
+                    "explanation": "The 'union' keyword defines a special data type where all members share the same memory location, allowing only one member to be used at a time."
                 },
                 {
                     "question_text": "How do you access a structure member?",
-                    "options": ["With a dot (.)", "With an arrow (->)", "With a colon (:)", "With a slash (/)"] ,
-                    "correct_option": "With a dot (.)"
+                    "options": ["With a dot (.)", "With an arrow (->)", "With a colon (:)", "With a slash (/)"],
+                    "correct_option": "With a dot (.)",
+                    "explanation": "The dot (.) operator is used to access structure members when working with a structure directly. The arrow (->) is used when accessing members through a pointer."
                 },
                 {
                     "question_text": "Which file mode is used to open a file for writing only?",
                     "options": ["r", "w", "a", "rw"],
-                    "correct_option": "w"
+                    "correct_option": "w",
+                    "explanation": "The 'w' mode opens a file for writing. If the file exists, it truncates the file. If the file does not exist, it creates a new file."
                 },
                 {
                     "question_text": "Which function is used to read data from a file?",
                     "options": ["fscanf()", "fread()", "fgets()", "All of the above"],
-                    "correct_option": "All of the above"
+                    "correct_option": "All of the above",
+                    "explanation": "Multiple functions can be used to read data from a file in C. fscanf() reads formatted input, fread() reads binary data, and fgets() reads a string from a file."
                 },
                 {
                     "question_text": "What is the purpose of the fclose() function?",
                     "options": ["Close a file", "Delete a file", "Flush the file buffer", "Create a file"],
-                    "correct_option": "Close a file"
+                    "correct_option": "Close a file",
+                    "explanation": "fclose() is used to close an open file, which flushes any unwritten buffers and releases the file descriptor, preventing resource leaks."
                 },
                 {
                     "question_text": "What is the main difference between a structure and a union?",
                     "options": ["Union shares memory among members", "Structure allows inheritance", "Union cannot store multiple values", "Structure is faster than union"],
-                    "correct_option": "Union shares memory among members"
+                    "correct_option": "Union shares memory among members",
+                    "explanation": "In a union, all members share the same memory location, meaning only one member can be used at a time. In a structure, each member has its own memory space."
                 },
                 {
                     "question_text": "Which function is used to write data to a file?",
                     "options": ["fprintf()", "fwrite()", "fputs()", "All of the above"],
-                    "correct_option": "All of the above"
+                    "correct_option": "All of the above",
+                    "explanation": "Multiple functions can write data to a file. fprintf() writes formatted output, fwrite() writes binary data, and fputs() writes a string to a file."
                 },
                 {
                     "question_text": "Which file mode is used to append data to an existing file?",
                     "options": ["r", "w", "a", "x"],
-                    "correct_option": "a"
+                    "correct_option": "a",
+                    "explanation": "The 'a' mode opens a file for appending. New data is added to the end of the file. If the file does not exist, it creates a new file."
                 },
                 {
                     "question_text": "Which library must be included for file handling in C?",
                     "options": ["stdio.h", "stdlib.h", "string.h", "file.h"],
-                    "correct_option": "stdio.h"
+                    "correct_option": "stdio.h",
+                    "explanation": "The stdio.h header file provides functions for input and output operations, including file handling functions like fopen(), fclose(), fprintf(), and fscanf()."
                 }
             ]
         },
@@ -343,52 +403,62 @@
                 {
                     "question_text": "Which symbol is used to define a macro in C?",
                     "options": ["@", "#", "$", "&"],
-                    "correct_option": "#"
+                    "correct_option": "#",
+                    "explanation": "The '#' symbol is used for preprocessor directives, including defining macros using #define. It allows text substitution before actual compilation."
                 },
                 {
                     "question_text": "Which directive is used to include a header file in C?",
                     "options": ["#define", "#include", "#import", "#header"],
-                    "correct_option": "#include"
+                    "correct_option": "#include",
+                    "explanation": "#include is used to include header files, which bring in function declarations, macro definitions, and other necessary declarations from library or user-defined header files."
                 },
                 {
                     "question_text": "What is the purpose of #define in C?",
                     "options": ["To define a function", "To define a constant or macro", "To declare a variable", "To include a library"],
-                    "correct_option": "To define a constant or macro"
+                    "correct_option": "To define a constant or macro",
+                    "explanation": "#define allows creating constants or macros that are substituted by the preprocessor before compilation, enabling text replacement and simple code generation."
                 },
                 {
                     "question_text": "Which preprocessor directive is used for conditional compilation?",
                     "options": ["#if", "#ifdef", "#ifndef", "All of the above"],
-                    "correct_option": "All of the above"
+                    "correct_option": "All of the above",
+                    "explanation": "These preprocessor directives allow conditional compilation. #if checks a compile-time condition, #ifdef checks if a macro is defined, and #ifndef checks if a macro is not defined."
                 },
                 {
                     "question_text": "What does the #undef directive do?",
                     "options": ["Undefines a macro", "Deletes a variable", "Stops compilation", "Ignores a function"],
-                    "correct_option": "Undefines a macro"
+                    "correct_option": "Undefines a macro",
+                    "explanation": "#undef removes a previously defined macro, allowing you to redefine it or ensure it is not defined for a specific part of the code."
                 },
                 {
                     "question_text": "Which of the following is a predefined macro in C?",
                     "options": ["__FILE__", "__DATE__", "__LINE__", "All of the above"],
-                    "correct_option": "All of the above"
+                    "correct_option": "All of the above",
+                    "explanation": "These are standard predefined macros in C. __FILE__ gives the current source file name, __DATE__ provides the compilation date, and __LINE__ gives the current line number."
                 },
                 {
                     "question_text": "What does the #pragma directive do?",
                     "options": ["Issues special commands to the compiler", "Defines a function", "Declares a variable", "Includes a header file"],
-                    "correct_option": "Issues special commands to the compiler"
+                    "correct_option": "Issues special commands to the compiler",
+                    "explanation": "#pragma provides compiler-specific instructions that are not part of the standard C language, allowing additional control over compilation."
                 },
                 {
                     "question_text": "Which macro can be used to prevent multiple inclusions of a header file?",
                     "options": ["#define", "#pragma once", "#ifndef", "Both #pragma once and #ifndef"],
-                    "correct_option": "Both #pragma once and #ifndef"
+                    "correct_option": "Both #pragma once and #ifndef",
+                    "explanation": "Both methods prevent multiple inclusions of header files. #pragma once is a non-standard but widely supported directive, while #ifndef is the standard, portable method."
                 },
                 {
                     "question_text": "Which directive is used to stop compilation when an error occurs?",
                     "options": ["#error", "#stop", "#abort", "#halt"],
-                    "correct_option": "#error"
+                    "correct_option": "#error",
+                    "explanation": "#error is a preprocessor directive that causes compilation to stop and displays a user-defined error message, useful for catching configuration or dependency issues."
                 },
                 {
                     "question_text": "What is the output of the macro #define SQUARE(x) x*x when called as SQUARE(4+2)?",
                     "options": ["36", "16", "10", "Syntax Error"],
-                    "correct_option": "10"
+                    "correct_option": "10",
+                    "explanation": "The macro expands to 4+2*4+2, which evaluates to 4+8+2 = 10. This demonstrates the importance of using parentheses when defining complex macros to avoid unexpected results."
                 }
             ]
         },
@@ -399,52 +469,62 @@
                 {
                     "question_text": "Which optimization technique reduces redundant computations?",
                     "options": ["Loop Unrolling", "Common Subexpression Elimination", "Inlining", "Dead Code Elimination"],
-                    "correct_option": "Common Subexpression Elimination"
+                    "correct_option": "Common Subexpression Elimination",
+                    "explanation": "Common Subexpression Elimination identifies and removes redundant calculations by computing a value only once and reusing it, reducing unnecessary computational overhead."
                 },
                 {
                     "question_text": "Which keyword is used to hint the compiler to optimize a variable's access?",
                     "options": ["static", "register", "volatile", "const"],
-                    "correct_option": "register"
+                    "correct_option": "register",
+                    "explanation": "The 'register' keyword suggests to the compiler that the variable should be stored in a CPU register for faster access, though modern compilers often make this optimization automatically."
                 },
                 {
                     "question_text": "What is loop unrolling?",
                     "options": ["Reducing loop iterations", "Increasing loop efficiency by executing multiple iterations at once", "Removing loops", "Replacing loops with recursion"],
-                    "correct_option": "Increasing loop efficiency by executing multiple iterations at once"
+                    "correct_option": "Increasing loop efficiency by executing multiple iterations at once",
+                    "explanation": "Loop unrolling reduces loop overhead by processing multiple iterations in a single pass, potentially improving performance by reducing branch predictions and increasing instruction-level parallelism."
                 },
                 {
                     "question_text": "Which of the following is NOT a common optimization technique?",
                     "options": ["Dead Code Elimination", "Inlining", "Garbage Collection", "Loop Optimization"],
-                    "correct_option": "Garbage Collection"
+                    "correct_option": "Garbage Collection",
+                    "explanation": "Garbage Collection is a memory management technique, not an optimization technique. The other options are standard compiler optimization strategies to improve code performance."
                 },
                 {
                     "question_text": "Which data structure is best suited for fast searching?",
                     "options": ["Array", "Linked List", "Hash Table", "Stack"],
-                    "correct_option": "Hash Table"
+                    "correct_option": "Hash Table",
+                    "explanation": "Hash Tables provide near-constant time O(1) average-case lookup, making them the most efficient data structure for searching when implemented correctly."
                 },
                 {
                     "question_text": "Which technique improves cache performance in programs?",
                     "options": ["Memory Pooling", "Loop Fusion", "Cache Blocking", "All of the above"],
-                    "correct_option": "All of the above"
+                    "correct_option": "All of the above",
+                    "explanation": "These techniques improve cache performance by reducing memory access times, minimizing cache misses, and optimizing data locality in memory access patterns."
                 },
                 {
                     "question_text": "Which compiler optimization technique removes unreachable code?",
                     "options": ["Dead Code Elimination", "Loop Optimization", "Inlining", "Branch Prediction"],
-                    "correct_option": "Dead Code Elimination"
+                    "correct_option": "Dead Code Elimination",
+                    "explanation": "Dead Code Elimination removes code that cannot be executed or does not affect the program's output, reducing binary size and potentially improving performance."
                 },
                 {
                     "question_text": "Which profiling tool is commonly used for performance analysis?",
                     "options": ["GDB", "Valgrind", "Gprof", "Both Valgrind and Gprof"],
-                    "correct_option": "Both Valgrind and Gprof"
+                    "correct_option": "Both Valgrind and Gprof",
+                    "explanation": "Valgrind and Gprof are powerful profiling tools. Gprof provides performance statistics, while Valgrind offers detailed memory and performance analysis."
                 },
                 {
                     "question_text": "Which approach reduces memory fragmentation in dynamic allocation?",
                     "options": ["Memory Pooling", "Garbage Collection", "Stack Allocation", "Loop Unrolling"],
-                    "correct_option": "Memory Pooling"
+                    "correct_option": "Memory Pooling",
+                    "explanation": "Memory Pooling pre-allocates a large block of memory and manages smaller allocations within it, reducing fragmentation and improving allocation efficiency."
                 },
                 {
                     "question_text": "What is the benefit of function inlining?",
                     "options": ["Reduces function call overhead", "Increases memory usage", "Slows down execution", "Reduces code readability"],
-                    "correct_option": "Reduces function call overhead"
+                    "correct_option": "Reduces function call overhead",
+                    "explanation": "Function inlining replaces a function call with the actual function body, eliminating the overhead of function call setup and potentially allowing for further compiler optimizations."
                 }
             ]
         }
