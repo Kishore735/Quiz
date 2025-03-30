@@ -106,9 +106,10 @@ collections/
 Each question object has the following structure:
 ```javascript
 {
-  question_text: "What is the output of print(2 + 2)?",
-  options: ["4", "22", "Error", "None"],
-  correct_option: "4"
+"question_text": "Which operator is used to access the address of a variable?",
+"options": ["*", "&", "->", "%"],
+"correct_option": "&",
+"explanation": "The '&' operator is used to get the memory address of a variable. For example, &x returns the memory address where the variable x is stored."
 }
 ```
 
