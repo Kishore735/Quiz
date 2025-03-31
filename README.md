@@ -4,7 +4,7 @@
 
 ## 📝 Overview
 
-CodeQuiz is an interactive web application designed to help users test and improve their programming knowledge through quizzes. The application offers multiple language options (Python, Java, C, C++) with module-based quizzes and provides real-time feedback and performance analytics.
+CodeQuiz is an interactive web application designed to help users test and improve their programming knowledge through quizzes. The application offers multiple language options (Python, Java, C, C++) with module-based quizzes and provides real-time feedback and performance analytics. It also includes an AI-powered chatbot assistant to help users with programming questions and concepts.
 
 ### ✨ Features
 
@@ -14,6 +14,7 @@ CodeQuiz is an interactive web application designed to help users test and impro
 - **Performance Analytics**: Detailed performance metrics with visual charts
 - **Firebase Integration**: Cloud-based data storage and authentication
 - **Responsive Design**: Mobile and desktop-friendly user interface
+- **AI Chatbot Assistant**: Powered by DeepSeek R1 model to answer programming questions
 
 ## 🛠️ Technology Stack
 
@@ -21,6 +22,7 @@ CodeQuiz is an interactive web application designed to help users test and impro
 - **Backend**: Firebase (Authentication, Firestore)
 - **Charts**: Chart.js
 - **Hosting**: Firebase Hosting
+- **AI Model**: DeepSeek R1
 
 ## 🚀 Installation & Setup
 
@@ -59,8 +61,16 @@ CodeQuiz is an interactive web application designed to help users test and impro
    // Initialize Firebase
    firebase.initializeApp(firebaseConfig);
    ```
+4. **Configure DeepSeek R1 API**
 
-4. **Deploy to Firebase**
+   - Obtain an API key for DeepSeek R1
+   - Add your API key to js/bot.js:
+   ```javascript
+
+   const DEEPSEEK_API_KEY = "YOUR_DEEPSEEK_API_KEY";
+   ```
+
+5. **Deploy to Firebase**
    ```bash
    firebase login
    firebase init
@@ -74,11 +84,13 @@ quiz-app/
 ├── index.html
 ├── css/
 │   ├── styles.css
-│   └── result.css
+│   ├── result.css
+│   └── bot.css
 ├── js/
 │   ├── firebase-config.js
 │   ├── auth.js
-│   └── quiz.js
+│   ├── quiz.js
+│   └── bot.js
 └── pages/
     ├── login.html
     ├── quiz-selection.html
@@ -131,12 +143,30 @@ Each question object has the following structure:
    - Analyze time spent on each question
    - Review percentage of correct answers
 
+5. **AI Chatbot Assistant**
+
+   - Access the chatbot from any page using the chat icon
+   - Ask programming-related questions
+   - Get code examples and explanations
+   - Receive guidance on difficult quiz concepts
+
+**🤖 DeepSeek R1 Chatbot Integration**
+   The application includes an AI-powered chatbot that can assist users with programming questions and concepts. The chatbot is powered by the DeepSeek R1 model and provides:
+
+   - Programming Help: Assistance with coding problems and concepts
+   - Code Examples: Sample code snippets for various programming scenarios
+   - Quiz Support: Explanations for quiz questions and answers
+   - Learning Resources: Recommendations for further learning
+
+The bot can be accessed throughout the application via a chat icon in the bottom corner of the screen.
+
 ## 🖼️ Screenshots
 
 <div style="display: flex; justify-content: space-between;">
   <img src="https://github.com/Kishore735/Quiz/blob/main/website/image/login.png?raw=true" width="30%" alt="Login Screen">
   <img src="https://github.com/Kishore735/Quiz/blob/main/website/image/quiz.png?raw=true" width="30%" alt="Quiz Selection">
   <img src="https://github.com/Kishore735/Quiz/blob/main/website/image/result.png?raw=true" width="30%" alt="Results Screen">
+  <img src="https://github.com/Kishore735/Quiz/blob/main/website/image/chatbot.png?raw=true" width="30%" alt="Chat-bot">
 </div>
 
 ## 🤝 Contributing
