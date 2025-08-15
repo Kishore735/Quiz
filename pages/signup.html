@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - CodeQuiz</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="../js/firebase-config.js" defer></script>
+    <script src="../js/auth.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const signupForm = document.getElementById('signup-form');
+            const googleBtn = document.getElementById('google-signup-btn');
+            
+            // Email signup
+            if (signupForm) {
+                signupForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    const email = document.getElementById('email').value;
+                    const password = document.getElementById('password').value;
+                    const confirmPassword = document.getElementById('confirm-password').value;
+                    const displayName = document.getElementById('display-name').value;
+                    
+                    // Check if passwords match
+                    if (password !== confirmPassword) {
+                        document.getElementById('error-message').textContent = 'Passwords do not match';
+                        return;
+                    }
+                    
+                    // Create user with email and password
+                    auth.createUserWithEmailAndPassword(email, password)
+                        .then((userCredential) => {
+                            // Update profile with display name if provided
+                            if (displayName) {
+                                userCredential.user.updateProfile({
+                                    displayName: displayName
+                                }).then(() => {
+                                    window.location.href = '../index.html';
+                                }).catch((error) => {
+                                    console.error("Error updating profile:", error);
+                                });
+                            } else {
+                                window.location.href = '../index.html';
+                            }
+                        })
+                        .catch((error) => {
+                            document.getElementById('error-message').textContent = error.message;
+                        });
+                });
+            }
+            
+            // Google signup
+            if (googleBtn) {
+                googleBtn.addEventListener('click', () => {
+                    const provider = new firebase.auth.GoogleAuthProvider();
+                    auth.signInWithPopup(provider)
+                        .then(() => {
+                            window.location.href = '../index.html';
+                        })
+                        .catch((error) => {
+                            document.getElementById('error-message').textContent = error.message;
+                        });
+                });
+            }
+        });
+    </script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">CodeQuiz</div>
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="quiz-selection.html">Quizzes</a>
+            <a href="leaderboard.html">Leaderboard</a>
+        </div>
+    </nav>
+    
+    <div class="auth-container">
+        <div class="auth-card">
+            <h2>Sign Up for CodeQuiz</h2>
+            <p id="error-message" class="error-text"></p>
+            
+            <form id="signup-form">
+                <div class="form-group">
+                    <label for="display-name">Display Name (Optional)</label>
+                    <input type="text" id="display-name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required minlength="6">
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" required minlength="6">
+                </div>
+                <button type="submit" class="btn btn-primary">Sign Up</button>
+            </form>
+            
+            <div class="auth-divider">
+                <span>or</span>
+            </div>
+            
+            <button id="google-signup-btn" class="btn btn-outline">
+                <span class="google-icon">G</span> Sign Up with Google
+            </button>
+            
+            <p class="auth-footer">
+                Already have an account? <a href="login.html">Login</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
